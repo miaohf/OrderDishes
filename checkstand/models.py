@@ -11,6 +11,7 @@ class Menu(models.Model):
     kind = models.ForeignKey(Kind)
     name = models.CharField(max_length=30)
     price = models.IntegerField(max_length=3)
+    img=models.ImageField(upload_to='images')
     def __str__(self):
         return self.name
 

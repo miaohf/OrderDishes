@@ -24,7 +24,7 @@ SECRET_KEY = '+b*l)5r6rb)!bgif$t#i2ccc&7wl4p$c_xnumy3^esu)gdi3$k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*", ]
 
 # Application definition
 
@@ -121,11 +121,17 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
+from django.conf.urls.static import static
+from django.conf import settings
 
 STATIC_URL = '/static/'
-
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATIC_ROOT = os.path.join(BASE_DIR, 'collectstatic')
 
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
+
+if __name__=="__main__":
+    print("STATIC_ROOT:",STATIC_ROOT)

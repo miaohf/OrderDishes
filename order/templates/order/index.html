@@ -2,13 +2,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="jquery.mobile-1.4.5/demos/css/themes/default/jquery.mobile-1.4.5.min.css">
-    <script type="text/javascript" src="jquery.mobile-1.4.5/demos/js/jquery.min.js"></script>
-    <script type="text/javascript" src="jquery.mobile-1.4.5/demos/js/jquery.mobile-1.4.5.min.js"></script>
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>点菜</title>
+    {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'jquerymobile/demos/css/themes/default/jquery.mobile-1.4.5.min.css' %}">
+
+    <script type="text/javascript" src="{% static 'jquerymobile/demos/js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'jquerymobile/demos/js/jquery.mobile-1.4.5.min.js' %}"></script>
 </head>
 <body>
-<h1>点菜</h1>
+<div data-role="page">
+    <div data-role="header" data-theme="b">
+        <a href="#" class="ui-btn ui-icon-back">返回</a>
+        <h1>LTM点餐平台</h1>
+        <a href="#" class="ui-btn ui-icon-gear">设置</a>
+
+    </div>
+    <div data-role="content">
+
+    </div>
+    <div data-role="footer"  class="ui-footer-fixed" data-theme="b" >
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#" class="ui-btn ui-icon-home ui-btn-icon-top ui-corner-all">点菜</a></li>
+                <li><a href="#" class="ui-btn ui-icon-bars ui-btn-icon-top ui-corner-all">订单信息</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

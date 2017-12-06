@@ -1,8 +1,9 @@
 from django.conf.urls import url
 from checkstand.views import update_menu
+from checkstand.views import homepage
 
 urlpatterns = [
-    url(r'^index/$', update_menu.index, name='index'),
+    url(r'^index/$', homepage.index, name='index'),
     url(r'^historyorders/$', update_menu.hostory, name='history'),
     url(r'^updatamenu/$', update_menu.updata_menu, name='updata'),
 
@@ -15,6 +16,8 @@ urlpatterns = [
     url(r'^deletemenuacion/$', update_menu.delete_menu_action, name='deleteaction'),
 
 
+    url(r'^payaction/$', homepage.payaction, name='payaction'),
 
-    url(r'^queryajx/$',update_menu.query_ajax,name='queryajx')
+
+    url(r'^queryajx/$', update_menu.query_ajax, name='queryajx')
 ]

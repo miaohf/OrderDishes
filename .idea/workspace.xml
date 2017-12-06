@@ -1,734 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6bfa8154-a6ae-4780-bf1b-7d9fce32c014" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/media/images/20171202165443.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/media/images/20171202222353.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/css/jqm-demos.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/album-af.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/album-ag.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/album-bb.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/album-bk.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/album-hc.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/album-k.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/album-mg.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/album-ok.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/album-p.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/album-rh.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/album-ws.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/album-xx.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/apple.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/bg-pattern.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/bike.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/blackberry_10.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/bmw-thumb.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/bmw.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/buenosaires.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/capetown.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/de.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/devices.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/fi.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/firefox-logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/firefox_os.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/galaxy_express.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/gb.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/gf.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/glyphish-icons/09-chat2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/glyphish-icons/100-coffee.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/glyphish-icons/18-envelope.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/glyphish-icons/19-gear.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/glyphish-icons/21-skull.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/glyphish-icons/30-key.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/glyphish-icons/34-coffee.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/glyphish-icons/88-beermug.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/glyphish-icons/Read me first - license.txt" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/jquery-logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/landrover-thumb.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/landrover.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/lumia_800.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/newyork.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/nexus_7.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/paris.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/phone_galaxy3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/phone_iphone5.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/phone_lumia920.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/phone_onex.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/photo-landscape.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/photo-portrait.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/photo-run.jpeg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/seoul.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/sydney.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/tesla-thumb.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/tesla.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/tizen.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/img/us.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/js/h2widget.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/js/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/js/index.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/js/jqm-demos.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_assets/js/view-source.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/_search/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/backbone-requirejs/backbone-require.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/backbone-requirejs/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/backbone-requirejs/js/collections/CategoriesCollection.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/backbone-requirejs/js/main.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/backbone-requirejs/js/models/CategoryModel.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/backbone-requirejs/js/routers/mobileRouter.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/backbone-requirejs/js/views/CategoryView.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/body-bar-classes/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/button-markup/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/button/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/checkboxradio-checkbox/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/checkboxradio-radio/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/collapsible-dynamic/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/collapsible/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/collapsibleset/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/controlgroup-dynamic/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/controlgroup/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/ajax-loader.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/action-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/action-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/alert-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/alert-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/arrow-d-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/arrow-d-l-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/arrow-d-l-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/arrow-d-r-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/arrow-d-r-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/arrow-d-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/arrow-l-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/arrow-l-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/arrow-r-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/arrow-r-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/arrow-u-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/arrow-u-l-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/arrow-u-l-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/arrow-u-r-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/arrow-u-r-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/arrow-u-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/audio-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/audio-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/back-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/back-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/bars-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/bars-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/bullets-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/bullets-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/calendar-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/calendar-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/camera-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/camera-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/carat-d-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/carat-d-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/carat-l-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/carat-l-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/carat-r-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/carat-r-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/carat-u-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/carat-u-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/check-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/check-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/clock-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/clock-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/cloud-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/cloud-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/comment-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/comment-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/delete-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/delete-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/edit-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/edit-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/eye-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/eye-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/forbidden-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/forbidden-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/forward-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/forward-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/gear-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/gear-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/grid-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/grid-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/heart-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/heart-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/home-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/home-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/info-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/info-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/location-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/location-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/lock-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/lock-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/mail-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/mail-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/minus-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/minus-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/navigation-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/navigation-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/phone-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/phone-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/plus-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/plus-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/power-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/power-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/recycle-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/recycle-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/refresh-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/refresh-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/search-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/search-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/shop-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/shop-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/star-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/star-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/tag-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/tag-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/user-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/user-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/video-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-png/video-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/action-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/action-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/alert-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/alert-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/arrow-d-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/arrow-d-l-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/arrow-d-l-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/arrow-d-r-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/arrow-d-r-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/arrow-d-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/arrow-l-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/arrow-l-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/arrow-r-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/arrow-r-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/arrow-u-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/arrow-u-l-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/arrow-u-l-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/arrow-u-r-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/arrow-u-r-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/arrow-u-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/audio-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/audio-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/back-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/back-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/bars-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/bars-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/bullets-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/bullets-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/calendar-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/calendar-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/camera-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/camera-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/carat-d-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/carat-d-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/carat-l-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/carat-l-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/carat-r-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/carat-r-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/carat-u-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/carat-u-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/check-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/check-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/clock-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/clock-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/cloud-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/cloud-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/comment-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/comment-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/delete-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/delete-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/edit-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/edit-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/eye-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/eye-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/forbidden-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/forbidden-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/forward-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/forward-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/gear-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/gear-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/grid-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/grid-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/heart-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/heart-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/home-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/home-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/info-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/info-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/location-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/location-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/lock-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/lock-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/mail-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/mail-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/minus-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/minus-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/navigation-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/navigation-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/phone-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/phone-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/plus-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/plus-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/power-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/power-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/recycle-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/recycle-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/refresh-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/refresh-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/search-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/search-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/shop-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/shop-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/star-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/star-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/tag-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/tag-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/user-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/user-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/video-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/images/icons-svg/video-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/jquery.mobile-1.4.5.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/jquery.mobile.external-png-1.4.5.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/jquery.mobile.icons-1.4.5.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/jquery.mobile.inline-png-1.4.5.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/jquery.mobile.inline-svg-1.4.5.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/jquery.mobile.structure-1.4.5.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/css/themes/default/jquery.mobile.theme-1.4.5.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/datepicker/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/favicon.ico" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/filterable/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/flipswitch/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/forms-disabled/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/forms-field-contain/fieldcontain-hide-label-deprecated.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/forms-field-contain/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/forms-gallery/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/forms-label-hidden-accessible/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/forms/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/grids-buttons/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/grids-custom-responsive/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/grids/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/icons-grunticon/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/icons/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/intro/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/jqm-contents.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/jqm-contents.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/jqm-navmenu.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/jqm-navmenu.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/jqm-search.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/jqm-search.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/js/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/js/jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/js/jquery.mobile-1.4.5.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/js/jquery.mobile-1.4.5.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/js/jquery.mobile-1.4.5.min.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/listview-autocomplete-remote/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/listview-autocomplete/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/listview-autodividers-linkbar/autodividers-linkbar-demo.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/listview-autodividers-linkbar/autodividers-linkbar.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/listview-autodividers-linkbar/autodividers-linkbar.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/listview-autodividers-linkbar/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/listview-autodividers-selector/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/listview-collapsible-item-flat/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/listview-collapsible-item-indented/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/listview-grid/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/listview-grid/listview-grid.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/listview-grid/listview-grid.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/listview-nested-lists/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/listview/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/loader/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/map-geolocation/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/map-list-toggle/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/map-list-toggle/jquery.gmap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/map-list-toggle/showMore.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/navbar/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/navigation-hash-processing/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/navigation-linking-pages/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/navigation-php-redirect/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/navigation-php-redirect/redirect-target.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/navigation-php-redirect/redirect.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/navigation-php-redirect/source.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/navigation/demo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/navigation/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/controls-in-header-footer.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/disabling-a-button-does-not-work.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/dom-ready-not-working.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/how-can-i-stop-auto-enhancement-of-a-block-of-elements.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/how-can-i-stop-auto-enhancement-of-elements.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/how-configure-phonegap-cordova.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/how-do-i-control-page-titles.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/how-do-i-load-a-page.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/how-do-i-scroll-to-a-position.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/how-do-i-turn-off-url-hiding.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/how-do-i-use-touch-mouse-events.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/how-does-theming-work.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/injected-content-is-not-enhanced.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/my-html-5-inputs-look-different-in-browsers.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/my-range-search-input-type-is-being-changed.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/pass-query-params-to-page.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/pass-via-the-hash-to-page.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/scripts-and-styles-not-loading.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/sometimes-custom-select-shows-as-dialog-popup.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/the-application-cache-is-not-working.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/triggering-create-on-injected-content-does-not-work.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/updating-the-value-of-enhanced-form-elements-does-not-work.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/why-is-only-the-first-page-loaded.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/old-faq-pages/why-wont-my-css-styles-apply-correctly-to-a-widget.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/page-events/alertevents-2.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/page-events/alertevents-2.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/page-events/alertevents-3.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/page-events/alertevents-3.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/page-events/alertevents.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/page-events/alertevents.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/page-events/docs.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/page-events/docs.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/page-events/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/page-events/logevents-2.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/page-events/logevents-2.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/page-events/logevents-3.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/page-events/logevents-3.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/page-events/logevents.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/page-events/logevents.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/pages-dialog/dialog-alt.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/pages-dialog/dialog-buttons.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/pages-dialog/dialog-corners.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/pages-dialog/dialog-noclosebtn.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/pages-dialog/dialog-overlay.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/pages-dialog/dialog-rightclosebtn.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/pages-dialog/dialog-success.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/pages-dialog/dialog-with-select.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/pages-dialog/dialog.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/pages-dialog/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/pages-multi-page/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/pages-single-page/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/pages/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/pages/samepagetransition.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/pages/startpage.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/panel-external-internal/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/panel-external-internal/page-b.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/panel-external-internal/page-c.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/panel-external/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/panel-external/page-b.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/panel-fixed/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/panel-responsive/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/panel-styling/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/panel-swipe-open/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/panel/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/popup-alignment/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/popup-alignment/popup.alignment.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/popup-arrow-size/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/popup-dynamic/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/popup-iframe/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/popup-iframe/map.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/popup-iframe/popup-iframe-map.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/popup-iframe/popup-iframe-video.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/popup-image-scaling/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/popup-image-scaling/popup-image-scaling.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/popup-outside-multipage/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/popup/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/rangeslider/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/rwd/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/selectmenu-custom-filter/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/selectmenu-custom/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/selectmenu/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/slider-flipswitch/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/slider-tooltip/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/slider/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/swipe-list/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/swipe-page/buenosaires.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/swipe-page/capetown.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/swipe-page/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/swipe-page/newyork.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/swipe-page/paris.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/swipe-page/seoul.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/swipe-page/swipe-page.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/swipe-page/swipe-page.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/swipe-page/sydney.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/table-column-toggle-example/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/table-column-toggle-heading-groups/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/table-column-toggle-options/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/table-column-toggle/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/table-reflow-heading-groups/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/table-reflow-stripes-strokes/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/table-reflow-styling/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/table-reflow/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/tabs/ajax-content-ignore.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/tabs/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/tabs/tabbed-content.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/textinput/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/theme-classic/images/ajax-loader.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/theme-classic/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/theme-classic/theme-classic.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/theme-default/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/toolbar-dynamic/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/toolbar-external/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/toolbar-external/index2.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/toolbar-fixed-external/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/toolbar-fixed-forms/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/toolbar-fixed-fullscreen/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/toolbar-fixed-persistent-optimized/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/toolbar-fixed-persistent-optimized/page-b.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/toolbar-fixed-persistent-optimized/page-c.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/toolbar-fixed-persistent-optimized/page-d.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/toolbar-fixed-persistent/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/toolbar-fixed-persistent/page-b.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/toolbar-fixed-persistent/page-c.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/toolbar-fixed-persistent/page-d.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/toolbar-fixed/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/toolbar/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/transitions/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/transitions/page-transitions-dialog.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/demos/transitions/page-transitions-page.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/ajax-loader.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/action-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/action-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/alert-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/alert-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/arrow-d-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/arrow-d-l-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/arrow-d-l-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/arrow-d-r-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/arrow-d-r-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/arrow-d-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/arrow-l-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/arrow-l-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/arrow-r-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/arrow-r-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/arrow-u-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/arrow-u-l-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/arrow-u-l-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/arrow-u-r-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/arrow-u-r-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/arrow-u-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/audio-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/audio-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/back-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/back-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/bars-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/bars-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/bullets-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/bullets-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/calendar-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/calendar-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/camera-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/camera-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/carat-d-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/carat-d-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/carat-l-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/carat-l-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/carat-r-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/carat-r-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/carat-u-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/carat-u-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/check-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/check-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/clock-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/clock-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/cloud-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/cloud-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/comment-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/comment-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/delete-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/delete-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/edit-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/edit-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/eye-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/eye-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/forbidden-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/forbidden-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/forward-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/forward-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/gear-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/gear-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/grid-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/grid-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/heart-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/heart-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/home-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/home-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/info-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/info-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/location-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/location-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/lock-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/lock-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/mail-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/mail-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/minus-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/minus-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/navigation-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/navigation-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/phone-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/phone-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/plus-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/plus-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/power-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/power-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/recycle-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/recycle-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/refresh-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/refresh-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/search-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/search-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/shop-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/shop-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/star-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/star-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/tag-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/tag-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/user-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/user-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/video-black.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-png/video-white.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/action-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/action-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/alert-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/alert-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/arrow-d-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/arrow-d-l-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/arrow-d-l-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/arrow-d-r-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/arrow-d-r-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/arrow-d-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/arrow-l-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/arrow-l-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/arrow-r-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/arrow-r-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/arrow-u-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/arrow-u-l-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/arrow-u-l-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/arrow-u-r-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/arrow-u-r-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/arrow-u-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/audio-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/audio-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/back-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/back-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/bars-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/bars-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/bullets-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/bullets-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/calendar-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/calendar-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/camera-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/camera-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/carat-d-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/carat-d-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/carat-l-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/carat-l-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/carat-r-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/carat-r-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/carat-u-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/carat-u-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/check-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/check-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/clock-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/clock-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/cloud-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/cloud-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/comment-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/comment-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/delete-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/delete-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/edit-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/edit-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/eye-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/eye-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/forbidden-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/forbidden-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/forward-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/forward-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/gear-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/gear-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/grid-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/grid-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/heart-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/heart-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/home-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/home-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/info-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/info-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/location-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/location-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/lock-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/lock-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/mail-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/mail-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/minus-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/minus-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/navigation-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/navigation-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/phone-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/phone-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/plus-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/plus-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/power-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/power-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/recycle-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/recycle-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/refresh-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/refresh-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/search-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/search-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/shop-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/shop-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/star-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/star-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/tag-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/tag-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/user-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/user-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/video-black.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/images/icons-svg/video-white.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/jquery.mobile-1.4.5.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/jquery.mobile-1.4.5.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/jquery.mobile-1.4.5.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/jquery.mobile-1.4.5.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/jquery.mobile-1.4.5.min.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/jquery.mobile.external-png-1.4.5.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/jquery.mobile.external-png-1.4.5.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/jquery.mobile.icons-1.4.5.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/jquery.mobile.icons-1.4.5.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/jquery.mobile.inline-png-1.4.5.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/jquery.mobile.inline-png-1.4.5.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/jquery.mobile.inline-svg-1.4.5.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/jquery.mobile.inline-svg-1.4.5.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/jquery.mobile.structure-1.4.5.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/jquery.mobile.structure-1.4.5.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/jquery.mobile.theme-1.4.5.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/jquerymobile/jquery.mobile.theme-1.4.5.min.css" />
-      <change beforePath="$PROJECT_DIR$/.idea/OrderDishes.iml" afterPath="$PROJECT_DIR$/.idea/OrderDishes.iml" />
-      <change beforePath="$PROJECT_DIR$/OrderDishes/settings.py" afterPath="$PROJECT_DIR$/OrderDishes/settings.py" />
-      <change beforePath="$PROJECT_DIR$/OrderDishes/urls.py" afterPath="$PROJECT_DIR$/OrderDishes/urls.py" />
+    <list default="true" id="6bfa8154-a6ae-4780-bf1b-7d9fce32c014" name="Default" comment="ADD image method">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/images/02f490d059633f0df444eb88.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/images/1190259_a6d8ce.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/images/1190804_5a0f1f.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/images/1192173_b949b5.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/images/1200529_0b84bb.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/images/58bd0a35d6375577bbaa901b.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/images/58d9d632e4dd02509d1df72c.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/images/597c83fdf226b54cfc81396a.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/order/templates/order/success.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/checkstand/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/checkstand/migrations/0001_initial.py" />
       <change beforePath="$PROJECT_DIR$/checkstand/models.py" afterPath="$PROJECT_DIR$/checkstand/models.py" />
       <change beforePath="$PROJECT_DIR$/checkstand/templates/checkstand/history_orders.html" afterPath="$PROJECT_DIR$/checkstand/templates/checkstand/history_orders.html" />
       <change beforePath="$PROJECT_DIR$/checkstand/templates/checkstand/index.html" afterPath="$PROJECT_DIR$/checkstand/templates/checkstand/index.html" />
-      <change beforePath="$PROJECT_DIR$/checkstand/templates/checkstand/update_menu.html" afterPath="$PROJECT_DIR$/checkstand/templates/checkstand/update_menu.html" />
-      <change beforePath="$PROJECT_DIR$/checkstand/views/update_menu.py" afterPath="$PROJECT_DIR$/checkstand/views/update_menu.py" />
-      <change beforePath="$PROJECT_DIR$/order/admin.py" afterPath="$PROJECT_DIR$/order/admin.py" />
+      <change beforePath="$PROJECT_DIR$/checkstand/urls.py" afterPath="$PROJECT_DIR$/checkstand/urls.py" />
       <change beforePath="$PROJECT_DIR$/order/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/order/migrations/0001_initial.py" />
       <change beforePath="$PROJECT_DIR$/order/models.py" afterPath="$PROJECT_DIR$/order/models.py" />
       <change beforePath="$PROJECT_DIR$/order/templates/order/index.html" afterPath="$PROJECT_DIR$/order/templates/order/index.html" />
       <change beforePath="$PROJECT_DIR$/order/urls.py" afterPath="$PROJECT_DIR$/order/urls.py" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.css" afterPath="$PROJECT_DIR$/static/bootstrapt/css/bootstrap-theme.css" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.css.map" afterPath="$PROJECT_DIR$/static/bootstrapt/css/bootstrap-theme.css.map" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css" afterPath="$PROJECT_DIR$/static/bootstrapt/css/bootstrap-theme.min.css" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css.map" afterPath="$PROJECT_DIR$/static/bootstrapt/css/bootstrap-theme.min.css.map" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css" afterPath="$PROJECT_DIR$/static/bootstrapt/css/bootstrap.css" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.css.map" afterPath="$PROJECT_DIR$/static/bootstrapt/css/bootstrap.css.map" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/static/bootstrapt/css/bootstrap.min.css" />
-      <change beforePath="$PROJECT_DIR$/static/css/bootstrap.min.css.map" afterPath="$PROJECT_DIR$/static/bootstrapt/css/bootstrap.min.css.map" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/static/bootstrapt/fonts/glyphicons-halflings-regular.eot" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/static/bootstrapt/fonts/glyphicons-halflings-regular.svg" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/static/bootstrapt/fonts/glyphicons-halflings-regular.ttf" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/static/bootstrapt/fonts/glyphicons-halflings-regular.woff" />
-      <change beforePath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/static/bootstrapt/fonts/glyphicons-halflings-regular.woff2" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.js" afterPath="$PROJECT_DIR$/static/bootstrapt/js/bootstrap.js" />
-      <change beforePath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/static/bootstrapt/js/bootstrap.min.js" />
-      <change beforePath="$PROJECT_DIR$/static/js/jquery-1.12.0.min.js" afterPath="$PROJECT_DIR$/static/bootstrapt/js/jquery-1.12.0.min.js" />
-      <change beforePath="$PROJECT_DIR$/static/js/npm.js" afterPath="$PROJECT_DIR$/static/bootstrapt/js/npm.js" />
+      <change beforePath="$PROJECT_DIR$/order/views.py" afterPath="$PROJECT_DIR$/order/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -746,11 +41,97 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="update_menu.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checkstand/views/update_menu.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/checkstand/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="264">
+              <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="homepage.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checkstand/views/homepage.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="75" column="99" lean-forward="false" selection-start-line="75" selection-start-column="91" selection-end-line="75" selection-end-column="99" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/order/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="success.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/order/templates/order/success.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/order/templates/order/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="736">
+              <caret line="59" column="4" lean-forward="false" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checkstand/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0001_initial.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/checkstand/migrations/0001_initial.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -759,72 +140,8 @@
       <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/checkstand/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/order/templates/order/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="695">
-              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="update_menu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/update_menu.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9174">
-              <caret line="417" column="10" lean-forward="false" selection-start-line="417" selection-start-column="10" selection-end-line="417" selection-end-column="10" />
-              <folding>
-                <element signature="e#5423#5430#1#HTML" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="wsgi.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OrderDishes/wsgi.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="update_menu.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/checkstand/views/update_menu.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="814">
-              <caret line="37" column="70" lean-forward="false" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/checkstand/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="14" column="52" lean-forward="false" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+            <state relative-caret-position="66">
+              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -835,8 +152,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Setup Script" />
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -849,23 +166,27 @@
       <list>
         <option value="$PROJECT_DIR$/OrderDishes/__init__.py" />
         <option value="$PROJECT_DIR$/checkstand/templates/index.html" />
-        <option value="$PROJECT_DIR$/order/views.py" />
-        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/index.html" />
-        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/history_orders.html" />
         <option value="$PROJECT_DIR$/checkstand/admin.py" />
         <option value="$PROJECT_DIR$/checkstand/views.py" />
         <option value="$PROJECT_DIR$/checkstand/views/updata_menu.py" />
-        <option value="$PROJECT_DIR$/checkstand/urls.py" />
-        <option value="$PROJECT_DIR$/order/urls.py" />
         <option value="$PROJECT_DIR$/manage.py" />
         <option value="$PROJECT_DIR$/order/admin.py" />
-        <option value="$PROJECT_DIR$/order/models.py" />
         <option value="$PROJECT_DIR$/OrderDishes/settings.py" />
-        <option value="$PROJECT_DIR$/checkstand/models.py" />
         <option value="$PROJECT_DIR$/OrderDishes/urls.py" />
         <option value="$PROJECT_DIR$/checkstand/views/update_menu.py" />
         <option value="$PROJECT_DIR$/checkstand/templates/checkstand/update_menu.html" />
+        <option value="$PROJECT_DIR$/checkstand/models.py" />
+        <option value="$PROJECT_DIR$/order/urls.py" />
+        <option value="$PROJECT_DIR$/order/templates/order/success.html" />
         <option value="$PROJECT_DIR$/order/templates/order/index.html" />
+        <option value="$PROJECT_DIR$/checkstand/views/index.py" />
+        <option value="$PROJECT_DIR$/checkstand/views/checkstand.py" />
+        <option value="$PROJECT_DIR$/order/models.py" />
+        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/history_orders.html" />
+        <option value="$PROJECT_DIR$/checkstand/urls.py" />
+        <option value="$PROJECT_DIR$/checkstand/views/homepage.py" />
+        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/index.html" />
+        <option value="$PROJECT_DIR$/order/views.py" />
       </list>
     </option>
   </component>
@@ -875,9 +196,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="61" />
-    <option name="width" value="1936" />
+    <option name="width" value="1932" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -890,11 +211,21 @@
           <State>
             <id>HTML</id>
           </State>
+          <State>
+            <id>Python</id>
+          </State>
         </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyCompatibilityInspection</id>
+          </State>
+        </selected-state>
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -911,7 +242,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -928,46 +258,30 @@
               <item name="OrderDishes" type="b2602c69:ProjectViewProjectNode" />
               <item name="OrderDishes" type="462c0819:PsiDirectoryNode" />
               <item name="checkstand" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OrderDishes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OrderDishes" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OrderDishes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OrderDishes" type="462c0819:PsiDirectoryNode" />
-              <item name="media" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OrderDishes" type="b2602c69:ProjectViewProjectNode" />
               <item name="OrderDishes" type="462c0819:PsiDirectoryNode" />
               <item name="order" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OrderDishes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OrderDishes" type="462c0819:PsiDirectoryNode" />
+              <item name="order" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OrderDishes" type="b2602c69:ProjectViewProjectNode" />
               <item name="OrderDishes" type="462c0819:PsiDirectoryNode" />
               <item name="order" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OrderDishes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OrderDishes" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="OrderDishes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="OrderDishes" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1089,23 +403,33 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="61" y="0" width="1932" height="1047" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="manage.py@OrderDishes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21881838" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20260021" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25053304" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20260021" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26709402" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="manage.py@OrderDishes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21343446" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1119,6 +443,32 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -1126,6 +476,7 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1134,34 +485,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/checkstand/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="3" column="25" lean-forward="false" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="45" lean-forward="false" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
@@ -1255,13 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/migrations/0001_initial.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="18" column="111" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="111" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/checkstand/views/update_menu.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1269,28 +585,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/views/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/checkstand/views.py" />
-    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/history_orders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="990">
-          <caret line="45" column="32" lean-forward="false" selection-start-line="45" selection-start-column="32" selection-end-line="45" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OrderDishes/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -1312,88 +607,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/order/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="1" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OrderDishes/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="131" column="20" lean-forward="true" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OrderDishes/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="24" column="64" lean-forward="true" selection-start-line="24" selection-start-column="64" selection-end-line="24" selection-end-column="64" />
-          <folding>
-            <element signature="e#645#685#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1409,11 +626,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/index.html">
+    <entry file="file://$PROJECT_DIR$/OrderDishes/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="26" column="25" lean-forward="false" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="2882">
+          <caret line="131" column="20" lean-forward="false" selection-start-line="131" selection-start-column="20" selection-end-line="131" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -1421,19 +637,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/models.py">
+    <entry file="file://$PROJECT_DIR$/OrderDishes/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="440">
+          <caret line="23" column="57" lean-forward="false" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/tests.py">
+    <entry file="file://$PROJECT_DIR$/order/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="4" column="35" lean-forward="true" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/views/index.py" />
+    <entry file="file://$PROJECT_DIR$/checkstand/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/views/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1441,38 +691,135 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/urls.py">
+    <entry file="file://$PROJECT_DIR$/order/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="14" column="52" lean-forward="false" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
+        <state relative-caret-position="154">
+          <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/history_orders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1606">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/update_menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5170">
+          <caret line="235" column="62" lean-forward="false" selection-start-line="235" selection-start-column="62" selection-end-line="235" selection-end-column="62" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/checkstand/views/update_menu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="814">
-          <caret line="37" column="70" lean-forward="false" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
+        <state relative-caret-position="220">
+          <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/update_menu.html">
+    <entry file="file://$PROJECT_DIR$/checkstand/views/homepage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9174">
-          <caret line="417" column="10" lean-forward="false" selection-start-line="417" selection-start-column="10" selection-end-line="417" selection-end-column="10" />
+        <state relative-caret-position="242">
+          <caret line="11" column="60" lean-forward="false" selection-start-line="11" selection-start-column="60" selection-end-line="11" selection-end-column="60" />
           <folding>
-            <element signature="e#5423#5430#1#HTML" expanded="false" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="75" column="99" lean-forward="false" selection-start-line="75" selection-start-column="91" selection-end-line="75" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/templates/order/success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/order/templates/order/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="695">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="736">
+          <caret line="59" column="4" lean-forward="false" selection-start-line="59" selection-start-column="4" selection-end-line="59" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="33" lean-forward="false" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="20" />
           <folding />
         </state>
       </provider>

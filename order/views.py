@@ -17,5 +17,4 @@ def order_aciton(request):
         order_id=Order.objects.create(desk_id=int(desk), remark='kkk',totle_price=totleprice,state=0).id
         for checkbox in checkbox_list:
             Order_details.objects.create(num=1,menu_id=int(checkbox),order_id=int(order_id))
-
     return render(request,'order/success.html')

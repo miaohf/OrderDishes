@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>收银台</title>
+    {% load staticfiles %}
+    <link href="{% static 'bootstrapt/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'bootstrapt/css/dashboard.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrapt/css/buttons.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrapt/css/bootstrap-datetimepicker.min.css' %}" rel="stylesheet" media="screen">
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">点餐后台管理</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">tuichu</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li><a href="{% url 'checkstand:home' %}">收银</a></li>
+                <li><a href="{% url 'checkstand:page' 1 %}">历史订单</a></li>
+            </ul>
+
+            <ul class="nav nav-sidebar">
+                <li><a href="{% url 'checkstand:deskmanage' %}">桌号管理</a></li>
+                <li><a href="{% url 'checkstand:menukindmanage' %}">菜类管理</a></li>
+                <li><a href="{% url 'checkstand:menumanage' %}">菜单管理</a></li>
+            </ul>
+
+            <ul class="nav nav-sidebar">
+                <li class="active"><a href="{% url 'checkstand:incomeday' %}">日收入</a></li>
+                <li><a href="{% url 'checkstand:incomemonth' %}">月收入</a></li>
+                <li><a href="{% url 'checkstand:incomeyear' %}">年收入</a></li>
+            </ul>
+
+            <ul class="nav nav-sidebar">
+                <li><a href="#">菜单分析</a></li>
+                <li><a href="">订单分析</a></li>
+            </ul>
+
+        </div>
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div class="row">
+                <form class="form-horizontal " role="form">
+                    <legend>日收入分析</legend>
+                    <div class="form-group">
+                        <div class="col-md-3">
+                        </div>
+                        <div class="col-md-1">
+                            <label for="dtp_input" class="control-label pull-right">日期选择：</label>
+                        </div>
+                        <div class="input-group date form_date col-md-3" data-date=""
+                             data-date-format="yyyy-mm-dd"
+                             data-link-field="dtp_input" data-link-format="yyyy-mm-dd">
+                            <input class="form-control" type="text" id="dtp_input" value="" readonly>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                            <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                        </div>
+                        <div class="col-md-1">
+                            <input type="button" class="button button-primary button-small" onclick="querySubmit();"
+                                   value="查询">
+                        </div>
+                        <div class="col-md-4">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                日销量总览
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="main1" style="width:auto;height:400px;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                日菜品销量柱状图
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="main" style="width:auto;height:400px;"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                日菜品销量详情
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>菜名</th>
+                                    <th>份数</th>
+                                </tr>
+                                </thead>
+                                <tbody id="sales">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">
+                                日订单详情
+                            </h3>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>订单号</th>
+                                    <th>桌号</th>
+                                    <th>下单时间</th>
+                                    <th>总价</th>
+                                </tr>
+                                </thead>
+                                <tbody id="income">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="{% static 'bootstrapt/js/jquery-1.12.0.min.js' %}"></script>
+<script src="{% static 'bootstrapt/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'bootstrapt/js/echarts.min.js' %}"></script>
+<script src="{% static 'bootstrapt/js/walden.js' %}"></script>
+<script src="{% static 'bootstrapt/js/bootstrap-datetimepicker.js' %}"></script>
+<script src="{% static 'bootstrapt/js/bootstrap-datetimepicker.zh-CN.js' %}"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.form_date').datetimepicker({
+            language: 'zh-CN',
+            weekStart: 1,
+            todayBtn: 1,
+            autoclose: 1,
+            todayHighlight: 1,
+            startView: 2,
+            minView: 2,
+            forceParse: 0
+        });
+
+        fistSubmit()
+    })
+
+    function fistSubmit() {
+        var today = new Date()
+        var year = today.getFullYear()
+        var month = today.getMonth() + 1
+        var day = today.getDate()
+        var time = year + '-' + month + '-' + day
+        $("#dtp_input").val(time)
+        ajaxPost(time)
+    }
+
+    function querySubmit() {
+        var time = $("#dtp_input").val();
+        if (time == "") {
+            alert("输入为空")
+        } else {
+            ajaxPost(time)
+        }
+
+    }
+
+    function crtTimeFtt(val) {
+        if (val != null) {
+            var date = new Date(val);
+            return date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate() + "  " + date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+        }
+    }
+
+    function orderList(data) {
+        var html
+        var orderModel
+        var order
+        if (data != null) {
+            orders = JSON.parse(data)
+            for (var i in orders) {
+                orderModel = orders[i]
+                order = orderModel.fields
+                html += ("<tr>" +
+                    "<td>" + orderModel.pk + "</td>" +
+                    "<td>" + order.desk + "</td>" +
+                    "<td>" + crtTimeFtt(order.time) + "</td>" +
+                    "<td>" + order.totle_price + "</td>" +
+                    "</tr>")
+            }
+        } else {
+
+            html = ''
+        }
+
+        $("#income").html(html)
+    }
+
+    function salesList(data) {
+        var html
+        if (data != null) {
+            orderedmenus = JSON.parse(data)
+            for (var key in orderedmenus) {
+                html += ("<tr>" +
+                    "<td>" + key + "</td>" +
+                    "<td>" + orderedmenus[key] + "</td>"
+                )
+            }
+
+        } else {
+            html = ''
+        }
+        $("#sales").html(html)
+
+    }
+
+
+    function ajaxPost(time) {
+        $.ajax({
+            headers: {"X-CSRFToken": '{{ csrf_token }}'},
+            url: "{% url 'checkstand:dayincomajax' %}",
+            type: 'POST',
+            tradition: true,
+            dataType: 'json',
+            data: {time: time},
+            success: function (data) {
+                {#alert(data.orders)#}
+                {#alert(data.orderedmenus)#}
+                {#alert(data.menuincome)#}
+                if (data.state == 'success') {
+                    var menuincome = JSON.parse(data.menuincome)
+                    var menusales = JSON.parse(data.menusales)
+                    var dayIncomeKeys = []
+                    var dayIncomeValues = []
+                    var daySalesKeys = []
+                    var daySalesItems = []
+                    var salesSum = 0
+                    var incomeSum = 0
+
+                    for (var key in menuincome) {
+                        dayIncomeKeys.unshift(key)
+                        dayIncomeValues.unshift(menuincome[key])
+                        incomeSum += menuincome[key]
+                    }
+
+                    for (var key in menusales) {
+                        daySalesKeys.unshift(key)
+                        daySalesItems.unshift({'value': menusales[key], 'name': key})
+                        salesSum += menusales[key]
+                    }
+
+                    orderList(data.orders)
+                    salesList(data.menusales)
+                    dayvolume(daySalesKeys, daySalesItems, salesSum)
+                    dayincome(dayIncomeKeys, dayIncomeValues, incomeSum)
+                } else {
+                    alert('没找到' + time + '相关订单')
+                    var dayIncomeKeys = []
+                    var dayIncomeValues = []
+                    var daySalesKeys = []
+                    var daySalesItems = []
+                    var salesSum = 0
+                    var incomeSum = 0
+                    orderList(data.orders)
+                    salesList(data.orderedmenus)
+                    dayvolume(daySalesKeys, daySalesItems, salesSum)
+                    dayincome(dayIncomeKeys, dayIncomeValues, incomeSum)
+                }
+
+            },
+
+        })
+    }
+
+    function dayincome(key, value, sum) {
+        // 基于准备好的dom，初始化echarts实例
+        var histogram = echarts.init(document.getElementById('main'),'walden');
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: '菜品日收入：' + sum,
+                subtext: '单位（元）'
+            },
+            tooltip: {},
+            legend: {
+                data: ['收入']
+            },
+            xAxis: {
+                data: key
+            },
+            yAxis: {},
+            series: [{
+                name: '收入',
+                type: 'bar',
+                data: value
+            }]
+        };
+
+        // 使用刚指定的配置项和数据显示图表。
+        histogram.setOption(option);
+    }
+
+    function dayvolume(key, item, sum) {
+        var pie = echarts.init(document.getElementById('main1'),'walden');
+        option = {
+            title: {
+                text: '菜品日销量：' + sum,
+                subtext: '单位（份）',
+                x: 'center'
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            legend: {
+                orient: 'vertical',
+                left: 'left',
+                data: key
+            },
+            series: [
+                {
+                    name: '日销量',
+                    type: 'pie',
+                    radius: '55%',
+                    center: ['50%', '60%'],
+                    data: item,
+                    itemStyle: {
+                        emphasis: {
+                            shadowBlur: 10,
+                            shadowOffsetX: 0,
+                            shadowColor: 'rgba(0, 0, 0, 0.5)'
+                        }
+                    }
+                }
+            ]
+        };
+        pie.setOption(option);
+    }
+</script>
+
+
+</body>
+</html>
+
+

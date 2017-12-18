@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>收银台</title>
+    {% load staticfiles %}
+    <link href="{% static 'bootstrapt/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrapt/css/dashboard.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrapt/css/buttons.css' %}" rel="stylesheet">
+    <script src="{% static 'bootstrapt/js/jquery-1.12.0.min.js' %}"></script>
+    <script src="{% static 'bootstrapt/js/bootstrap.min.js' %}"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">点餐后台管理</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">Dashboard</a></li>
+
+
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">tuichu</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <ul class="nav nav-sidebar">
+                <li><a href="{% url 'checkstand:home' %}">收银</a></li>
+                <li><a href="{% url 'checkstand:page' 1 %}">历史订单</a></li>
+
+            </ul>
+
+            <ul class="nav nav-sidebar">
+                <li><a href="{% url 'checkstand:deskmanage' %}">桌号管理</a></li>
+                <li class="active"><a href="{% url 'checkstand:menukindmanage' %}">菜类管理</a></li>
+                <li><a href="{% url 'checkstand:menumanage' %}">菜单管理</a></li>
+            </ul>
+
+            <ul class="nav nav-sidebar">
+                <li><a href="{% url 'checkstand:incomeday' %}">日收入</a></li>
+                <li><a href="{% url 'checkstand:incomemonth' %}">月收入</a></li>
+                <li><a href="{% url 'checkstand:incomeyear' %}">年收入</a></li>
+            </ul>
+
+            <ul class="nav nav-sidebar">
+                <li><a href="#">菜单分析</a></li>
+                <li><a href="">订单分析</a></li>
+            </ul>
+
+        </div>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <div id="navcontrol" style="margin-bottom: 20px">
+                <div class="button-group">
+                    <button class="button button-pill button-primary" data-toggle="modal" data-target="#addKind">
+                        新增类型
+                    </button>
+                    <button class="button button-pill button-primary" data-toggle="modal" data-target="#updateKind">
+                        修改菜类
+                    </button>
+                    <button class="button button-pill button-primary" data-toggle="modal" data-target="#deleteKind">
+                        删除类型
+                    </button>
+                </div>
+
+                <form class="form-search pull-right">
+                    <input type="text" name="username" id="queryname" class="input-medium search-query">
+                    <button type="submit" class="button button-circle button-primary"><span
+                            class="glyphicon glyphicon-search"/></button>
+                </form>
+            </div>
+
+            <div class="row placeholders">
+                {% for kind in kinds %}
+                    <div class="col-sm-6 col-md-2">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h1>{{ kind.name }}</h1>
+                                <p>菜类编号：{{ kind.id }}</p>
+                                <div class="button-group">
+                                    <a href="#" class="button button-primary button-small" role="button">修改</a>
+                                    <a href="#" class="button button-small" role="button">删除</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="updateKind" tabindex="-1" role="dialog"
+         aria-labelledby="updateKindModalLabe"
+         aria-hidden="true">
+        <div class="modal-dialog modal-sm" style="text-align: center;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="updateKindModalLabe">
+                        修改菜类
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" action="{% url 'checkstand:updatekindacion' %}" method="post">
+                        {% csrf_token %}
+
+                        <div class="form-group">
+                            <label class="col-md-5" for="oldkind">旧菜类名：</label>
+                            <div class="col-md-7">
+                                <select id="oldkind" class="form-control m-bot15" name="oldkindname">
+                                    {% for kind in kinds %}
+                                        <option>{{ kind.name }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-5" for="newkind">新菜类名：</label>
+                            <div class="col-md-7">
+                                <input type="text" id="newkind" class="form-control"
+                                       name="newkindname">
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="modal-footer">
+                            <div class="button-group">
+                                <button type="submit"
+                                        class="button button-primary button-small">
+                                    确定
+                                </button>
+                                <button type="button"
+                                        class="button button-small"
+                                        data-dismiss="modal">
+                                    关闭
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="addKind" tabindex="-1" role="dialog"
+         aria-labelledby="addKindModalLabe"
+         aria-hidden="true">
+        <div class="modal-dialog modal-sm" style="text-align: center">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="addKindModalLabe">
+                        新增菜类
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" action="{% url 'checkstand:addkindaction' %}" method="post">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label class="col-md-4" for="newkind">菜类名：</label>
+                            <div class="col-md-6">
+                                <input type="text" id="newkind" class="form-control" name="kind_name"
+                                       placeholder="菜类名">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="modal-footer">
+                            <div class="button-group">
+                                <button type="submit"
+                                        class="button button-primary button-small">
+                                    确定
+                                </button>
+                                <button type="button"
+                                        class="button button-small"
+                                        data-dismiss="modal">
+                                    关闭
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="deleteKind" tabindex="-1" role="dialog"
+         aria-labelledby="deleteKindModalLabe"
+         aria-hidden="true">
+        <div class="modal-dialog" style="width:300px;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="deleteKindModalLabe">
+                        删除菜类
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form action="{% url 'checkstand:deletekindacion' %}" method="post">
+                        {% csrf_token %}
+                        <select class="form-control m-bot15" id="deletekindname" name="kind_name">
+                            {% for kind in kinds %}
+                                <option>{{ kind.name }}</option>
+                            {% endfor %}
+                        </select>
+                        <br>
+                        <div class="modal-footer">
+                            <div class="button-group">
+                                <button type="submit"
+                                        class="button button-primary button-small">
+                                    确定
+                                </button>
+                                <button type="button"
+                                        class="button button-small"
+                                        data-dismiss="modal">
+                                    关闭
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

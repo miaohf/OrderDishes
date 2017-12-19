@@ -9,11 +9,9 @@ def paging(request, page):
         currentpage = int(page)
     except ValueError:
         raise Http404()
-
     orders_list = Order.objects.filter(state=True).order_by('-id')
     order_details = Order_details.objects.all()
-    paginator = Paginator(orders_list, 10)
-
+    paginator = Paginator(orders_list, 15)
     try:
         orders = paginator.page(currentpage)
     except PageNotAnInteger:

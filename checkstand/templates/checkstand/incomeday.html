@@ -9,6 +9,7 @@
     <link href="{% static 'bootstrapt/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
     <link href="{% static 'bootstrapt/css/dashboard.css' %}" rel="stylesheet">
     <link href="{% static 'bootstrapt/css/buttons.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrapt/css/scojs.css' %}" rel="stylesheet">
     <link href="{% static 'bootstrapt/css/bootstrap-datetimepicker.min.css' %}" rel="stylesheet" media="screen">
 </head>
 
@@ -90,7 +91,7 @@
                 </form>
             </div>
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">
@@ -102,7 +103,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-8">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">
@@ -117,7 +118,7 @@
 
             </div>
             <div class="row">
-                <div class="col-md-5">
+                <div class="col-md-4">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">
@@ -139,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7">
+                <div class="col-md-8">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">
@@ -170,8 +171,18 @@
 <script src="{% static 'bootstrapt/js/bootstrap.min.js' %}"></script>
 <script src="{% static 'bootstrapt/js/echarts.min.js' %}"></script>
 <script src="{% static 'bootstrapt/js/walden.js' %}"></script>
+<script src="{% static 'bootstrapt/js/sco.message.js' %}"></script>
 <script src="{% static 'bootstrapt/js/bootstrap-datetimepicker.js' %}"></script>
 <script src="{% static 'bootstrapt/js/bootstrap-datetimepicker.zh-CN.js' %}"></script>
+<script>
+    $('#message_trigger_ok').on('click', function (e) {
+        e.preventDefault();
+        $.scojs_message('This is an info message', $.scojs_message.TYPE_OK);
+    });
+    $('#message_trigger_err').on('click', function (e) {
+        e.preventDefault();
+    });
+</script>
 <script type="text/javascript">
     $(document).ready(function () {
         $('.form_date').datetimepicker({
@@ -201,7 +212,7 @@
     function querySubmit() {
         var time = $("#dtp_input").val();
         if (time == "") {
-            alert("输入为空")
+            $.scojs_message("输入为空", $.scojs_message.TYPE_ERROR);
         } else {
             ajaxPost(time)
         }
@@ -232,10 +243,8 @@
                     "</tr>")
             }
         } else {
-
             html = ''
         }
-
         $("#income").html(html)
     }
 
@@ -271,33 +280,31 @@
                 {#alert(data.orderedmenus)#}
                 {#alert(data.menuincome)#}
                 if (data.state == 'success') {
-                    var menuincome = JSON.parse(data.menuincome)
-                    var menusales = JSON.parse(data.menusales)
+                    var menuIncome = JSON.parse(data.menuIncome)
+                    var menuSales = JSON.parse(data.menuSales)
+                    var menuKind=JSON.parse(data.menuKind)
                     var dayIncomeKeys = []
                     var dayIncomeValues = []
                     var daySalesKeys = []
                     var daySalesItems = []
                     var salesSum = 0
                     var incomeSum = 0
-
-                    for (var key in menuincome) {
-                        dayIncomeKeys.unshift(key)
-                        dayIncomeValues.unshift(menuincome[key])
-                        incomeSum += menuincome[key]
+                    for (var key in menuIncome) {
+                        dayIncomeKeys.push(key)
+                        dayIncomeValues.push(menuIncome[key])
+                        incomeSum += menuIncome[key]
                     }
-
-                    for (var key in menusales) {
-                        daySalesKeys.unshift(key)
-                        daySalesItems.unshift({'value': menusales[key], 'name': key})
-                        salesSum += menusales[key]
+                    for (var key in menuKind) {
+                        daySalesKeys.push(key)
+                        daySalesItems.push({'value': menuKind[key], 'name': key})
+                        salesSum += menuKind[key]
                     }
-
                     orderList(data.orders)
-                    salesList(data.menusales)
+                    salesList(data.menuSales)
                     dayvolume(daySalesKeys, daySalesItems, salesSum)
                     dayincome(dayIncomeKeys, dayIncomeValues, incomeSum)
                 } else {
-                    alert('没找到' + time + '相关订单')
+                    $.scojs_message('没找到' + time + '相关订单', $.scojs_message.TYPE_ERROR);
                     var dayIncomeKeys = []
                     var dayIncomeValues = []
                     var daySalesKeys = []
@@ -305,7 +312,7 @@
                     var salesSum = 0
                     var incomeSum = 0
                     orderList(data.orders)
-                    salesList(data.orderedmenus)
+                    salesList(data.menuSales)
                     dayvolume(daySalesKeys, daySalesItems, salesSum)
                     dayincome(dayIncomeKeys, dayIncomeValues, incomeSum)
                 }
@@ -316,9 +323,7 @@
     }
 
     function dayincome(key, value, sum) {
-        // 基于准备好的dom，初始化echarts实例
-        var histogram = echarts.init(document.getElementById('main'),'walden');
-        // 指定图表的配置项和数据
+        var histogram = echarts.init(document.getElementById('main'), 'walden');
         var option = {
             title: {
                 text: '菜品日收入：' + sum,
@@ -338,13 +343,11 @@
                 data: value
             }]
         };
-
-        // 使用刚指定的配置项和数据显示图表。
         histogram.setOption(option);
     }
 
     function dayvolume(key, item, sum) {
-        var pie = echarts.init(document.getElementById('main1'),'walden');
+        var pie = echarts.init(document.getElementById('main1'), 'walden');
         option = {
             title: {
                 text: '菜品日销量：' + sum,
@@ -380,8 +383,6 @@
         pie.setOption(option);
     }
 </script>
-
-
 </body>
 </html>
 

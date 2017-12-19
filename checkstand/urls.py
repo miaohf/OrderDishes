@@ -15,7 +15,7 @@ urlpatterns = [
     url(r'^deskmanage/$', deskmanage.index, name='deskmanage'),
 
     # 菜类
-    url(r'^menukindmanage/$', menumanage.kindindex, name='menukindmanage'),
+    url(r'^menukindmanage/$', menumanage.kind_index, name='menukindmanage'),
 
     url(r'^addkindacion/$', menumanage.add_kind_action, name='addkindaction'),
     url(r'^updatekindacion/$', menumanage.update_kind_action, name='updatekindacion'),
@@ -32,7 +32,7 @@ urlpatterns = [
     url(r'^incomemonth/$', income.month, name='incomemonth'),
     url(r'^incomeyear/$', income.year, name='incomeyear'),
 
-    url(r'^dayincomeajax/$', income.ajaxday, name='dayincomajax'),
-    url(r'^monthincomeajax/$', income.ajaxmonth, name='monthincomajax'),
+    url(r'^dayincomeajax/$', income.ajax_day, name='dayincomajax'),
+    url(r'^monthincomeajax/$', income.ajax_month, name='monthincomajax'),
     # url(r'test/$', home.test, name='test'),
 ]

@@ -16,7 +16,7 @@ def index(request):
     return render(request, 'checkstand/menumanage.html', locals())
 
 
-def kindindex(request):
+def kind_index(request):
     kinds = Kind.objects.all()
     menus = Menu.objects.all()
     return render(request, 'checkstand/menukindmanage.html', locals())

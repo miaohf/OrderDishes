@@ -28,8 +28,6 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Dashboard</a></li>
-
-
                 <li><a href="#">Settings</a></li>
                 <li><a href="#">tuichu</a></li>
                 <li><a href="#">Help</a></li>
@@ -79,17 +77,15 @@
                         删除类型
                     </button>
                 </div>
-
                 <form class="form-search pull-right">
                     <input type="text" name="username" id="queryname" class="input-medium search-query">
                     <button type="submit" class="button button-circle button-primary"><span
                             class="glyphicon glyphicon-search"/></button>
                 </form>
             </div>
-
             <div class="row placeholders">
                 {% for kind in kinds %}
-                    <div class="col-sm-6 col-md-2">
+                    <div class="col-sm-6 col-md-3">
                         <div class="thumbnail">
                             <div class="caption">
                                 <h1>{{ kind.name }}</h1>
@@ -104,11 +100,8 @@
                     </div>
                 {% endfor %}
             </div>
-
-
         </div>
     </div>
-
 
     <div class="modal fade" id="updateKind" tabindex="-1" role="dialog"
          aria-labelledby="updateKindModalLabe"
@@ -127,7 +120,6 @@
                 <div class="modal-body">
                     <form class="form-horizontal" action="{% url 'checkstand:updatekindacion' %}" method="post">
                         {% csrf_token %}
-
                         <div class="form-group">
                             <label class="col-md-5" for="oldkind">旧菜类名：</label>
                             <div class="col-md-7">

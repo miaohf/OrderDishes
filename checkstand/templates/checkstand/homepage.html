@@ -14,8 +14,7 @@
     <link href="{% static 'bootstrapt/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'bootstrapt/css/dashboard.css' %}" rel="stylesheet">
     <link href="{% static 'bootstrapt/css/buttons.css' %}" rel="stylesheet">
-    <script src="{% static 'bootstrapt/js/jquery-1.12.0.min.js' %}"></script>
-    <script src="{% static 'bootstrapt/js/bootstrap.min.js' %}"></script>
+
 
 </head>
 
@@ -110,7 +109,6 @@
                                              aria-labelledby="myModalLabel">
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
-
                                                     <div class="modal-header">
                                                         <button type="button" class="close" data-dismiss="modal"
                                                                 aria-label="Close"><span
@@ -121,7 +119,6 @@
                                                            style="padding-right: 50px;margin-bottom: -10px">
                                                             订单号:{{ order.id }}</p>
                                                     </div>
-
                                                     <form action="{% url 'checkstand:payaction' %}" method="post">
                                                         {% csrf_token %}
                                                         <div class="modal-body" style="margin-top: -16px">
@@ -151,18 +148,16 @@
                                                                     <td>{{ order.totle_price }}</td>
                                                                 </tr>
                                                             </table>
-
                                                             <div style="padding: 10px 20px 20px 30px">
                                                                 <p class="pull-left">桌号：{{ order.desk.id }}号</p>
                                                                 <p class="pull-right">
                                                                     下单时间：{{ order.time|date:"Y-m-d H:i:s" }}</p>
                                                             </div>
-
                                                         </div>
                                                         <div class="modal-footer">
                                                             <div class="button-group">
-                                                                <button type="submit"
-                                                                        class="button button-primary button-small">
+                                                                <button type="button"
+                                                                        class="button button-primary button-small" onclick="payAjax()">
                                                                     确定
                                                                 </button>
                                                                 <button type="button"
@@ -192,6 +187,26 @@
     </div>
 </div>
 
+<script src="{% static 'bootstrapt/js/jquery-1.12.0.min.js' %}"></script>
+<script src="{% static 'bootstrapt/js/bootstrap.min.js' %}"></script>
+<script>
+    function payAjax() {
+        $("#")
+        $.ajax({
+            headers: {"X-CSRFToken": '{{ csrf_token }}'},
+            url: "{% url 'checkstand:payaction' %}",
+            type: 'POST',
+            tradition: true,
+            dataType: 'json',
+            data: {time: time},
+            success: function (data) {
 
+            },
+
+        })
+    }
+
+
+</script>
 </body>
 </html>

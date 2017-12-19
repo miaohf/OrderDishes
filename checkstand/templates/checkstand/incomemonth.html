@@ -9,6 +9,7 @@
     <link href="{% static 'bootstrapt/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
     <link href="{% static 'bootstrapt/css/dashboard.css' %}" rel="stylesheet">
     <link href="{% static 'bootstrapt/css/buttons.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrapt/css/scojs.css' %}" rel="stylesheet">
     <link href="{% static 'bootstrapt/css/bootstrap-datetimepicker.min.css' %}" rel="stylesheet" media="screen">
 </head>
 
@@ -37,6 +38,7 @@
 </nav>
 
 <div class="container-fluid">
+
     <div class="row">
         <div class="col-sm-3 col-md-2 sidebar">
             <ul class="nav nav-sidebar">
@@ -103,55 +105,8 @@
                     </div>
                 </div>
 
-
             </div>
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">
-                                日菜品销量详情
-                            </h3>
-                        </div>
-                        <div class="panel-body">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th>菜名</th>
-                                    <th>份数</th>
-                                </tr>
-                                </thead>
-                                <tbody id="sales">
 
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-7">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">
-                                日订单详情
-                            </h3>
-                        </div>
-                        <div class="panel-body">
-                            <table class="table">
-                                <thead>
-                                <tr>
-                                    <th>订单号</th>
-                                    <th>桌号</th>
-                                    <th>下单时间</th>
-                                    <th>总价</th>
-                                </tr>
-                                </thead>
-                                <tbody id="income">
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
     </div>
 </div>
@@ -159,8 +114,21 @@
 <script src="{% static 'bootstrapt/js/bootstrap.min.js' %}"></script>
 <script src="{% static 'bootstrapt/js/echarts.min.js' %}"></script>
 <script src="{% static 'bootstrapt/js/walden.js' %}"></script>
+<script src="{% static 'bootstrapt/js/sco.message.js' %}"></script>
 <script src="{% static 'bootstrapt/js/bootstrap-datetimepicker.js' %}"></script>
 <script src="{% static 'bootstrapt/js/bootstrap-datetimepicker.zh-CN.js' %}"></script>
+
+
+<script>
+    $('#message_trigger_ok').on('click', function (e) {
+        e.preventDefault();
+        $.scojs_message('This is an info message', $.scojs_message.TYPE_OK);
+    });
+    $('#message_trigger_err').on('click', function (e) {
+        e.preventDefault();
+        $.scojs_message('This is an error message', $.scojs_message.TYPE_ERROR);
+    });
+</script>
 <script type="text/javascript">
     $(document).ready(function () {
         $('.form_date').datetimepicker({
@@ -173,22 +141,55 @@
             minView: 3,
             forceParse: 0
         });
+        fistSubmit()
 
     })
 
+    function fistSubmit() {
+        var today = new Date()
+        var year = today.getFullYear()
+        var month = today.getMonth() + 1
+        var time = year + '-' + month
+        $("#dtp_input").val(time)
+        ajaxPost(time)
+    }
 
     function querySubmit() {
         var time = $("#dtp_input").val();
         if (time == "") {
-            alert("输入为空")
+            $.scojs_message('输入为空', $.scojs_message.TYPE_ERROR);
         } else {
             ajaxPost(time)
         }
 
     }
 
-    function ajaxPost(time) {
+    function getMonthDict(day) {
+        days = parseInt(day)
+        var income = {}
+        for (var i = 1; i <= days; i++) {
+            income[i] = 0
+        }
+        return income
+    }
 
+    function getMonthList(incomeMonth) {
+        var data = []
+        for (key in incomeMonth) {
+            data.push([key, incomeMonth[key]])
+        }
+        return data
+    }
+
+    function getMonth(time) {
+        return new Date(time).getMonth() + 1
+    }
+
+    function getYear(time) {
+        return new Date(time).getFullYear()
+    }
+
+    function ajaxPost(time) {
         $.ajax({
             headers: {"X-CSRFToken": '{{ csrf_token }}'},
             url: "{% url 'checkstand:monthincomajax' %}",
@@ -198,26 +199,40 @@
             data: {time: time},
             success: function (data) {
                 if (data.state == 'success') {
-                    incomemonth = JSON.parse(data.incomemonth)
-                    if (incomemonth != "") {
-                        for (var key in incomemonth) {
-                            console.log(incomemonth[key].fields.time)
+                    var orderMonth = JSON.parse(data.orderMonth)
+                    var incomeMonth = getMonthDict(data.days)
+                    var totalIncome = 0
+                    for (var key in orderMonth) {
+                        var order = orderMonth[key].fields
+                        var orderTime = new Date(order.time)
+                        var day = orderTime.getDate()
+                        if (day in incomeMonth) {
+                            incomeMonth[day] += order.totle_price
+                            totalIncome += order.totle_price
                         }
-                        {#income()#}
-
-                    } else {
-                        alert('没有' + time + '相关信息')
                     }
+                    var data = getMonthList(incomeMonth)
+                    incomeChart(data, getYear(time), getMonth(time), totalIncome)
+
                 }
+                else if (data.state == "null") {
+                    $.scojs_message('没有查询到' + time + '相关信息', $.scojs_message.TYPE_ERROR);
+
+                    var incomeMonth = getMonthDict(data.days)
+                    var data = getMonthList(incomeMonth)
+                    incomeChart(data, getYear(time), getMonth(time), 0)
+                }
+
 
             },
 
         })
     }
 
-    function income() {
+    function incomeChart(data, year, month, totalIncome) {
         var histogram = echarts.init(document.getElementById('main'), "walden");
-        data = [["2000-06-05", 116], ["2000-06-06", 129], ["2000-06-07", 135], ["2000-06-08", 86], ["2000-06-09", 73], ["2000-06-10", 85], ["2000-06-11", 73], ["2000-06-12", 68], ["2000-06-13", 92], ["2000-06-14", 130], ["2000-06-15", 245], ["2000-06-16", 139], ["2000-06-17", 115], ["2000-06-18", 111], ["2000-06-19", 309], ["2000-06-20", 206], ["2000-06-21", 137], ["2000-06-22", 128], ["2000-06-23", 85], ["2000-06-24", 94], ["2000-06-25", 71], ["2000-06-26", 106], ["2000-06-27", 84], ["2000-06-28", 93], ["2000-06-29", 85], ["2000-06-30", 73], ["2000-07-01", 83], ["2000-07-02", 125], ["2000-07-03", 107], ["2000-07-04", 82], ["2000-07-05", 44], ["2000-07-06", 72], ["2000-07-07", 106], ["2000-07-08", 107], ["2000-07-09", 66], ["2000-07-10", 91], ["2000-07-11", 92], ["2000-07-12", 113], ["2000-07-13", 107], ["2000-07-14", 131], ["2000-07-15", 111], ["2000-07-16", 64], ["2000-07-17", 69], ["2000-07-18", 88], ["2000-07-19", 77], ["2000-07-20", 83], ["2000-07-21", 111], ["2000-07-22", 57], ["2000-07-23", 55], ["2000-07-24", 60]];
+        data = data
+
 
         var dateList = data.map(function (item) {
             return item[0];
@@ -237,7 +252,8 @@
 
             title: [{
                 left: 'center',
-                text: '月收入走势图'
+                text: year + '年' + month + '月收入走势图',
+                subtext: '总收入' + totalIncome + "元",
             }],
             tooltip: {
                 trigger: 'axis'
@@ -246,12 +262,12 @@
                 data: dateList
             }],
             yAxis: [{
-                splitLine: {show: false}
+                splitLine: {show: true}
             }],
 
             series: [{
                 type: 'line',
-                showSymbol: false,
+                showSymbol: true,
                 data: valueList
             }]
         };

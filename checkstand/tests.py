@@ -1,6 +1,8 @@
 from django.test import TestCase
 from datetime import datetime
-import re
+import qrcode
 
 # Create your tests here.
-print(datetime.now())
+img = qrcode.make(r'http://10.159.0.38:8000/checkstand/incomeday/')
+img.save("wangzhi.jpg")
+

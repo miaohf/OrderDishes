@@ -14,7 +14,6 @@
 <body>
 <div data-role="page">
     <div data-role="header" data-theme="b">
-
         <h1>LTM点餐平台</h1>
         <div data-role="navbar">
             <ul>
@@ -38,13 +37,10 @@
                                                          name="checkbox_list"></span>
                     </li>
                 {% endfor %}
-                <label for="desk">桌号：</label>
-                            <input type="text" id="desk" class="form-control" name="desk_id">
+                <input type="hidden" id="desk" class="form-control" name="desk_id" value="{{ desk_id }}">
                 <input type="submit" value="提交">
             </ul>
         </form>
-
-
     </div>
     <div data-role="footer" data-position="fixed" data-theme="b">
         <div data-role="navbar">
@@ -57,7 +53,7 @@
 </div>
 <script>
 
-    
+
 </script>
 </body>
 </html>

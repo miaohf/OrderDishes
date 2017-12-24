@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from order.models import Order, Order_details
+from checkstand.models import Order, OrderDetail
 from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.http import HttpResponse, Http404
 
@@ -10,8 +10,8 @@ def paging(request, page):
     except ValueError:
         raise Http404()
     orders_list = Order.objects.filter(state=True).order_by('-id')
-    order_details = Order_details.objects.all()
-    paginator = Paginator(orders_list, 15)
+    order_details = OrderDetail.objects.all()
+    paginator = Paginator(orders_list, 11)
     try:
         orders = paginator.page(currentpage)
     except PageNotAnInteger:

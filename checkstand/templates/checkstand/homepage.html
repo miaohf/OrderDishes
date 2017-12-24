@@ -14,6 +14,7 @@
     <link href="{% static 'bootstrapt/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'bootstrapt/css/dashboard.css' %}" rel="stylesheet">
     <link href="{% static 'bootstrapt/css/buttons.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrapt/css/scojs.css' %}" rel="stylesheet">
 
 
 </head>
@@ -35,13 +36,10 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="#">Dashboard</a></li>
-
-
                 <li><a href="#">Settings</a></li>
                 <li><a href="#">tuichu</a></li>
                 <li><a href="#">Help</a></li>
             </ul>
-
         </div>
     </div>
 </nav>
@@ -52,7 +50,6 @@
             <ul class="nav nav-sidebar">
                 <li class="active"><a href="{% url 'checkstand:home' %}">收银</a></li>
                 <li><a href="{% url 'checkstand:page' 1 %}">历史订单</a></li>
-
             </ul>
 
             <ul class="nav nav-sidebar">
@@ -76,7 +73,6 @@
 
 
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-
             <div class="row placeholders">
                 <div class="table-responsive">
                     <table class="table table-hover">
@@ -91,119 +87,139 @@
                         </thead>
                         <tbody>
                         {% for order in orders %}
-                            {% if order.state is  False %}
-                                <tr>
-                                    <td>{{ order.id }}</td>
-                                    <td>{{ order.desk_id }}</td>
-                                    <td>{{ order.time|date:"Y-m-d H:i:s" }}</td>
-                                    <td>{{ order.totle_price }}</td>
-                                    <td>
-
-                                        <button type="button" class="button button-caution button-small"
-                                                data-toggle="modal"
-                                                data-target="#myModal{{ order.id }}">
-                                            现金支付
-                                        </button>
-
-                                        <div class="modal fade" id="myModal{{ order.id }}" tabindex="-1" role="dialog"
-                                             aria-labelledby="myModalLabel">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal"
-                                                                aria-label="Close"><span
-                                                                aria-hidden="true">&times;</span>
-                                                        </button>
-                                                        <h4 class="modal-title" id="myModalLabel">支付账单</h4>
-                                                        <p class="pull-right"
-                                                           style="padding-right: 50px;margin-bottom: -10px">
-                                                            订单号:{{ order.id }}</p>
-                                                    </div>
-                                                    <form action="{% url 'checkstand:payaction' %}" method="post">
-                                                        {% csrf_token %}
-                                                        <div class="modal-body" style="margin-top: -16px">
-                                                            <input type="text" name="order_id" value="{{ order.id }}"
-                                                                   style="display: none">
-                                                            <table class="table">
-                                                                <th style="text-align: center">菜名</th>
-                                                                <th style="text-align: center">份数</th>
-                                                                <th style="text-align: center">单价</th>
-                                                                <th style="text-align: center">总价</th>
-                                                                {% for order_detail in order_details %}
-                                                                    {% if order.id is order_detail.order_id %}
-                                                                        <tr>
-                                                                            <td>{{ order_detail.menu.name }}</td>
-                                                                            <td>{{ order_detail.num }}</td>
-                                                                            <td>{{ order_detail.menu.price }}</td>
-                                                                            <td>
-                                                                                {% widthratio order_detail.num 1 order_detail.menu.price %}
-                                                                            </td>
-                                                                        </tr>
-                                                                    {% endif %}
-                                                                {% endfor %}
-                                                                <tr>
-                                                                    <td>总价</td>
-                                                                    <td></td>
-                                                                    <td></td>
-                                                                    <td>{{ order.totle_price }}</td>
-                                                                </tr>
-                                                            </table>
-                                                            <div style="padding: 10px 20px 20px 30px">
-                                                                <p class="pull-left">桌号：{{ order.desk.id }}号</p>
-                                                                <p class="pull-right">
-                                                                    下单时间：{{ order.time|date:"Y-m-d H:i:s" }}</p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <div class="button-group">
-                                                                <button type="button"
-                                                                        class="button button-primary button-small" onclick="payAjax()">
-                                                                    确定
-                                                                </button>
-                                                                <button type="button"
-                                                                        class="button button-small"
-                                                                        data-dismiss="modal">
-                                                                    关闭
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </form>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
-
-                            {% endif %}
+                            <tr id="order{{ order.id }}">
+                                <td>{{ order.id }}</td>
+                                <td>{{ order.desk_id }}</td>
+                                <td>{{ order.time|date:"Y-m-d H:i:s" }}</td>
+                                <td>{{ order.totle_price }}</td>
+                                <td>
+                                    <button type="button"
+                                            class="button button-primary button-small"
+                                            data-toggle="modal"
+                                            data-target="#myModal"
+                                            onclick="showBill({{ order.id }},{{ order.desk_id }},'{{ order.time }}',{{ order.totle_price }})">
+                                        现金支付
+                                    </button>
+                                </td>
+                            </tr>
                         {% endfor %}
                         </tbody>
                     </table>
                 </div>
-
             </div>
-
-
+        </div>
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+             aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document" style="text-align: center">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"
+                                aria-label="Close"><span
+                                aria-hidden="true">&times;</span>
+                        </button>
+                        <h3 class="modal-title" id="myModalLabel">支付账单</h3>
+                        <p id="title-order-id" class="pull-right" style="padding-right: 50px;"></p>
+                        <br>
+                    </div>
+                    <div class="modal-body" style="margin-top: -21px">
+                        <table class="table">
+                            <thead>
+                            <th>菜名</th>
+                            <th>份数</th>
+                            <th>单价</th>
+                            <th>总价</th>
+                            </thead>
+                            <tbody id="detail-list">
+                            </tbody>
+                        </table>
+                        <div style="padding: 10px 20px 0px 30px">
+                            <p id="desk-id" class="pull-left"></p>
+                            <p id="order-time" class="pull-right"></p>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="button-group">
+                            <button type="button"
+                                    class="button button-primary button-small"
+                                    onclick="payBill()"
+                            >
+                                支付
+                            </button>
+                            <button type="button"
+                                    class="button button-small"
+                                    data-dismiss="modal">
+                                关闭
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <script src="{% static 'bootstrapt/js/jquery-1.12.0.min.js' %}"></script>
 <script src="{% static 'bootstrapt/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'bootstrapt/js/sco.message.js' %}"></script>
 <script>
-    function payAjax() {
-        $("#")
+
+    function showBill(orderId, deskId, time, totlePrice) {
+        $("#title-order-id").html("订单号：" + orderId)
+        $("#desk-id").html("桌号：" + deskId + "号")
+        $("#order-time").html("下单时间：" + time)
         $.ajax({
             headers: {"X-CSRFToken": '{{ csrf_token }}'},
-            url: "{% url 'checkstand:payaction' %}",
+            url: "{% url 'checkstand:show_order_detal' %}",
             type: 'POST',
             tradition: true,
             dataType: 'json',
-            data: {time: time},
+            data: {orderId: orderId},
             success: function (data) {
-
+                if (data.state == 'success') {
+                    var bills = JSON.parse(data.bills)
+                    var html = ''
+                    for (var key in bills) {
+                        var bill = bills[key]
+                        html += "<tr>" +
+                            "<td>" + bill.menu_name + "</td>" +
+                            "<td>" + bill.order_num + "</td>" +
+                            "<td>" + bill.menu_price + "</td>" +
+                            "<td>" + bill.totle_price + "</td>" +
+                            "</tr>"
+                    }
+                    html += "<tr>" +
+                        "<td>总价</td>" +
+                        "<td></td>" +
+                        "<td></td>" +
+                        "<td>" + totlePrice + "</td>" +
+                        "</tr>"
+                    $("#detail-list").html(html)
+                }
             },
 
         })
+    }
+
+    function payBill() {
+        orderId = $("#title-order-id").html()
+        $.ajax({
+            headers: {"X-CSRFToken": '{{ csrf_token }}'},
+            url: "{% url 'checkstand:pay_bill' %}",
+            type: 'POST',
+            tradition: true,
+            dataType: 'json',
+            data: {orderId: orderId},
+            success: function (data) {
+                if (data.state == 'success') {
+                    var id = data.order_id
+                    $.scojs_message(id + "号订单支付成功", $.scojs_message.TYPE_OK);
+                    $('#myModal').modal('hide');
+                    $('#order' + id).hide();
+                }
+            },
+
+        })
+
     }
 
 

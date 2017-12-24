@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from order.models import Order, Order_details
+from checkstand.models import Order, OrderDetail
 from django.http import JsonResponse
 from django.core import serializers
 import json
@@ -38,7 +38,7 @@ def ajax_day(request):
     times = re.split(r"-", request.POST['time'])
     orders = Order.objects.filter(time__year=times[0], time__month=times[1], time__day=times[2], state=True)
     for order in orders:
-        order_details = Order_details.objects.filter(order=order)
+        order_details = OrderDetail.objects.filter(order=order)
         for order_detail in order_details:
             if order_detail.menu.name in menu_sales:
                 menu_sales[order_detail.menu.name] += order_detail.num

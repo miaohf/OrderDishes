@@ -69,7 +69,7 @@
         </div>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
             <div class="row" style="margin-bottom: 20px">
-                <button class="button button-glow button-rounded button-primary   button-primary" data-toggle="modal"
+                <button class="button   button-primary   button-primary" data-toggle="modal"
                         data-target="#addMenu">
                     新增菜品
                 </button>
@@ -104,7 +104,7 @@
                     <div role="tabpane0" class="tab-pane active" id="allmenu">
                         <div class="row placeholders" style="padding-top: 30px">
                             {% for menu in menus %}
-                                <div class="col-sm-6 col-md-3 placeholder">
+                                <div class="col-sm-6 col-md-2 placeholder">
                                     <div class="thumbnail">
                                         <img src="/media/{{ menu.img }}" class="img-responsive">
                                         <div class="caption">
@@ -133,7 +133,7 @@
                             <div class="row placeholders" style="padding-top: 30px">
                                 {% for menu in menus %}
                                     {% ifequal kind.id menu.kind_id %}
-                                        <div class="col-sm-6 col-md-3 placeholder">
+                                        <div class="col-sm-6 col-md-2 placeholder">
                                             <div class="thumbnail">
                                                 <img src="/media/{{ menu.img }}">
                                                 <div class="caption">

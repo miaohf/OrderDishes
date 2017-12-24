@@ -5,15 +5,16 @@ urlpatterns = [
 
     # 收银台
     url(r'^home/$', home.index, name='home'),
-    url(r'^payaction/$', home.pay_action, name='payaction'),
-
+    url(r'^paybill/$', home.pay_bill, name='pay_bill'),
+    url(r'^showorderdetal/$', home.show_order_detal, name='show_order_detal'),
     # 历史订单
     url(r'^history/page=(?P<page>\d+)$', historyorders.paging, name='page'),
 
     # ---管理功能----
     # 桌号
     url(r'^deskmanage/$', deskmanage.index, name='deskmanage'),
-
+    url(r'^deskaddmany/$', deskmanage.add_many, name='desk_add_many'),
+    url(r'^deskdelsingle/$', deskmanage.del_single, name='desk_del_single'),
     # 菜类
     url(r'^menukindmanage/$', menumanage.kind_index, name='menukindmanage'),
 

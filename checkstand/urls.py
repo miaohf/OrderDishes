@@ -1,5 +1,5 @@
 from django.conf.urls import url
-from checkstand.views import home, historyorders, menumanage, deskmanage, income
+from checkstand.views import home, historyorders, managemenu, managedesk, income,analyze
 
 urlpatterns = [
 
@@ -12,28 +12,31 @@ urlpatterns = [
 
     # ---管理功能----
     # 桌号
-    url(r'^deskmanage/$', deskmanage.index, name='deskmanage'),
-    url(r'^deskaddmany/$', deskmanage.add_many, name='desk_add_many'),
-    url(r'^deskdelsingle/$', deskmanage.del_single, name='desk_del_single'),
+    url(r'^managedesk/$', managedesk.index, name='manage_desk'),
+    url(r'^deskaddmany/$', managedesk.add_many, name='desk_add_many'),
+    url(r'^deskdelsingle/$', managedesk.del_single, name='desk_del_single'),
     # 菜类
-    url(r'^menukindmanage/$', menumanage.kind_index, name='menukindmanage'),
+    url(r'^managekind/$', managemenu.kind_index, name='manage_kind'),
 
-    url(r'^addkindacion/$', menumanage.add_kind_action, name='addkindaction'),
-    url(r'^updatekindacion/$', menumanage.update_kind_action, name='updatekindacion'),
-    url(r'^deletekindacion/$', menumanage.delete_kind_action, name='deletekindacion'),
+    url(r'^actionkindcreate/$', managemenu.add_kind_action, name='action_kind_create'),
+    url(r'^actionkindupdate/$', managemenu.update_kind_action, name='action_kind_update'),
+    url(r'^actionkinddelete/$', managemenu.delete_kind_action, name='action_kind_delete'),
     # 菜品
-    url(r'^menumanage/$', menumanage.index, name='menumanage'),
+    url(r'^menumanage/$', managemenu.index, name='manage_menu'),
 
-    url(r'^createmenuaction/$', menumanage.create_menu_action, name='createaction'),
-    url(r'^updatamenuacion/$', menumanage.update_menu_action, name='updateaction'),
-    url(r'^deletemenuacion/$', menumanage.delete_menu_action, name='deleteaction'),
+    url(r'^actionmenucreate/$', managemenu.create_menu_action, name='action_menu_create'),
+    url(r'^actionmenuupdate/$', managemenu.update_menu_action, name='action_menu_update'),
+    url(r'^actionmenudelete/$', managemenu.delete_menu_action, name='action_menu_delete'),
 
     # ----收入----
-    url(r'^incomeday/$', income.day, name='incomeday'),
-    url(r'^incomemonth/$', income.month, name='incomemonth'),
-    url(r'^incomeyear/$', income.year, name='incomeyear'),
+    url(r'^incomeday/$', income.day, name='income_day'),
+    url(r'^incomemonth/$', income.month, name='income_month'),
+    url(r'^incomeyear/$', income.year, name='income_year'),
 
-    url(r'^dayincomeajax/$', income.ajax_day, name='dayincomajax'),
-    url(r'^monthincomeajax/$', income.ajax_month, name='monthincomajax'),
-    # url(r'test/$', home.test, name='test'),
+    url(r'^ajaxincomeday/$', income.ajax_day, name='ajax_income_day'),
+    url(r'^ajaxincomemonth/$', income.ajax_month, name='ajax_income_month'),
+    # ----分析----
+    url(r'^analyzeorder/$', analyze.order, name='analyze_order'),
+    url(r'^analyzeormenu/$', analyze.menu, name='analyze_menu'),
+
 ]

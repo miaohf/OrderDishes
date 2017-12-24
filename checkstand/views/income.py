@@ -17,7 +17,7 @@ def month(request):
 
 
 def year(request):
-    return render(request, 'checkstand/incomeday.html')
+    return render(request, 'checkstand/incomeyear.html')
 
 
 """"

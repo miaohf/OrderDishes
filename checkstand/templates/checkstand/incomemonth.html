@@ -1,6 +1,6 @@
 {% extends 'checkstand/index.html' %}
 
-{% block month %}class="active"{% endblock %}
+{% block nav_month %}class="active"{% endblock %}
 
 {% block html_content %}
     <div class="row">
@@ -108,7 +108,7 @@
         function ajaxPost(time) {
             $.ajax({
                 headers: {"X-CSRFToken": '{{ csrf_token }}'},
-                url: "{% url 'checkstand:monthincomajax' %}",
+                url: "{% url 'checkstand:ajax_income_month' %}",
                 type: 'POST',
                 tradition: true,
                 dataType: 'json',

@@ -11,13 +11,13 @@ import os
 def index(request):
     kinds = Kind.objects.filter(state=True)
     menus = Menu.objects.filter(state=True)
-    return render(request, 'checkstand/menumanage.html', locals())
+    return render(request, 'checkstand/managemenu.html', locals())
 
 
 def kind_index(request):
     kinds = Kind.objects.filter(state=True)
     menus = Menu.objects.filter(state=True)
-    return render(request, 'checkstand/menukindmanage.html', locals())
+    return render(request, 'checkstand/managekind.html', locals())
 
 
 # 增删改菜单action
@@ -34,7 +34,7 @@ def create_menu_action(request):
     Menu.objects.create(name=name, price=price, kind=kind, img='menus/%s' % img.name, state=True)
     kinds = Kind.objects.filter(state=True)
     menus = Menu.objects.filter(state=True)
-    return render(request, 'checkstand/menumanage.html', {'kinds': kinds, 'menus': menus})
+    return render(request, 'checkstand/managemenu.html', {'kinds': kinds, 'menus': menus})
 
 
 def update_menu_action(request):
@@ -52,7 +52,7 @@ def update_menu_action(request):
         Menu.objects.filter(id=id).update(name=name, price=price)
     kinds = Kind.objects.filter(state=True)
     menus = Menu.objects.filter(state=True)
-    return render(request, 'checkstand/menumanage.html', {'kinds': kinds, 'menus': menus})
+    return render(request, 'checkstand/managemenu.html', {'kinds': kinds, 'menus': menus})
 
 
 def delete_menu_action(request):
@@ -60,7 +60,7 @@ def delete_menu_action(request):
     Menu.objects.filter(id=id).update(state=False)
     kinds = Kind.objects.filter(state=True)
     menus = Menu.objects.filter(state=True)
-    return render(request, 'checkstand/menumanage.html', {'kinds': kinds, 'menus': menus})
+    return render(request, 'checkstand/managemenu.html', {'kinds': kinds, 'menus': menus})
 
 
 # 增删改菜类action
@@ -69,7 +69,7 @@ def add_kind_action(request):
     Kind.objects.create(name=name, state=True)
     kinds = Kind.objects.filter(state=True)
     menus = Menu.objects.filter(state=True)
-    return render(request, 'checkstand/menukindmanage.html', {'kinds': kinds, 'menus': menus})
+    return render(request, 'checkstand/managekind.html', {'kinds': kinds, 'menus': menus})
 
 
 def delete_kind_action(request):
@@ -79,7 +79,7 @@ def delete_kind_action(request):
     Menu.objects.filter(kind=kind).update(state=False)
     kinds = Kind.objects.filter(state=True)
     menus = Menu.objects.filter(state=True)
-    return render(request, 'checkstand/menukindmanage.html', locals())
+    return render(request, 'checkstand/managekind.html', locals())
 
 
 def update_kind_action(request):
@@ -88,7 +88,7 @@ def update_kind_action(request):
     Kind.objects.filter(name=oldname).update(name=newname)
     kinds = Kind.objects.filter(state=True)
     menus = Menu.objects.filter(state=True)
-    return render(request, 'checkstand/menukindmanage.html', {'kinds': kinds, 'menus': menus})
+    return render(request, 'checkstand/managekind.html', {'kinds': kinds, 'menus': menus})
 
 
 def query_ajax(request):

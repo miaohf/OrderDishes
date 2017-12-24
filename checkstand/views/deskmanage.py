@@ -9,7 +9,7 @@ import os
 
 def index(request):
     desks = Desk.objects.filter(state=True)
-    return render(request, 'checkstand/deskmanage.html', locals())
+    return render(request, 'checkstand/managedesk.html', locals())
 
 
 def add_many(request):

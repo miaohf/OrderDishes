@@ -19,4 +19,4 @@ def paging(request, page):
     except EmptyPage:
         orders = paginator.page(paginator.num_pages)
 
-    return render(request, 'checkstand/history_orders.html', locals())
+    return render(request, 'checkstand/historyorders.html', locals())

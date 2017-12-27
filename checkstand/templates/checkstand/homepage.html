@@ -5,36 +5,41 @@
 {% block html_content %}
     <div class="row placeholders">
         <div class="table-responsive">
-            <table class="table table-hover">
-                <thead>
-                <tr>
-                    <th>订单号</th>
-                    <th>桌号</th>
-                    <th>下单时间</th>
-                    <th>总价</th>
-                    <th>收款</th>
-                </tr>
-                </thead>
-                <tbody>
-                {% for order in orders %}
-                    <tr id="order{{ order.id }}">
-                        <td>{{ order.id }}</td>
-                        <td>{{ order.desk_id }}</td>
-                        <td>{{ order.time|date:"Y-m-d H:i:s" }}</td>
-                        <td>{{ order.totle_price }}</td>
-                        <td>
-                            <button type="button"
-                                    class="button button-primary button-small"
-                                    data-toggle="modal"
-                                    data-target="#myModal"
-                                    onclick="showBill({{ order.id }},{{ order.desk_id }},'{{ order.time }}',{{ order.totle_price }})">
-                                现金支付
-                            </button>
-                        </td>
+            {% if orders.values下了 %}
+                <h1>暂时还没有顾客点餐</h1>
+            {% else %}
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>订单号</th>
+                        <th>桌号</th>
+                        <th>下单时间</th>
+                        <th>总价</th>
+                        <th>收款</th>
                     </tr>
-                {% endfor %}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                    {% for order in orders %}
+                        <tr id="order{{ order.id }}">
+                            <td>{{ order.id }}</td>
+                            <td>{{ order.desk_id }}</td>
+                            <td>{{ order.time|date:"Y-m-d H:i:s" }}</td>
+                            <td>{{ order.totle_price }}</td>
+                            <td>
+                                <button type="button"
+                                        class="button button-primary button-small"
+                                        data-toggle="modal"
+                                        data-target="#myModal"
+                                        onclick="showBill({{ order.id }},{{ order.desk_id }},'{{ order.time }}',{{ order.totle_price }})">
+                                    现金支付
+                                </button>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            {% endif %}
+
         </div>
     </div>
 {% endblock %}

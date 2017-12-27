@@ -9,7 +9,7 @@ def paging(request, page):
         currentpage = int(page)
     except ValueError:
         raise Http404()
-    orders_list = Order.objects.filter(state=True).order_by('-id')
+    orders_list = Order.objects.order_by('-id')
     order_details = OrderDetail.objects.all()
     paginator = Paginator(orders_list, 11)
     try:

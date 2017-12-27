@@ -5,7 +5,7 @@ from checkstand.models import Order, OrderDetail
 
 # Create your views here.
 def index(request, id):
-    desk_id = id
+    desk_id = Desk.objects.get(id=id, state=True).id
     kinds = Kind.objects.filter(state=True)
     menus = Menu.objects.filter(state=True)
     return render(request, 'order/index.html', locals())

@@ -3,6 +3,5 @@ from datetime import datetime
 import qrcode
 
 # Create your tests here.
-img = qrcode.make(r'http://10.159.0.38:8000/checkstand/incomeday/')
-img.save("wangzhi.jpg")
-
+d = {'a': 1, 'b': 4, 'c': 2}
+print(dict(sorted(d.items(), key=lambda x: x[1], reverse=True)))

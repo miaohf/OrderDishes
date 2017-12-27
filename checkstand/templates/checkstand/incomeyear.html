@@ -1,0 +1,159 @@
+{% extends 'checkstand/index.html' %}
+
+{% block nav_year %}class="active"{% endblock %}
+
+{% block html_content %}
+
+    <div class="row">
+        <form class="form-horizontal " role="form">
+            <legend>年收入分析</legend>
+            <div class="form-group">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-2">
+                    <label for="dtp_input" class="control-label pull-right">日期选择：</label>
+                </div>
+                <div class="input-group date form_date col-md-3" data-date=""
+                     data-date-format="yyyy"
+                     data-link-field="dtp_input" data-link-format="yyyy">
+                    <input class="form-control" type="text" id="dtp_input" value="" readonly>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-remove"></span></span>
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-th"></span></span>
+                </div>
+                <div class="col-md-1">
+                    <input type="button" class="button button-primary button-small" onclick="querySubmit();"
+                           value="查询">
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        年收入总览
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <div id="main" style="width:auto;height:450px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+{% block modal %}{% endblock %}
+{% block js_content %}
+    <script>
+        $(document).ready(function () {
+            $('.form_date').datetimepicker({
+                language: 'zh-CN',
+                weekStart: 1,
+                todayBtn: 1,
+                autoclose: 1,
+                todayHighlight: 1,
+                startView: 4,
+                minView: 4,
+                forceParse: 0
+            });
+            fistSubmit()
+
+        })
+
+        function fistSubmit() {
+            var time = new Date().getFullYear()
+            $("#dtp_input").val(time)
+            ajaxPost(time)
+        }
+
+        function querySubmit() {
+            var yesr = $('#dtp_input').val()
+            ajaxPost(yesr)
+        }
+
+
+        function ajaxPost(time) {
+            $.ajax({
+                headers: {"X-CSRFToken": '{{ csrf_token }}'},
+                url: "{% url 'checkstand:ajax_income_year' %}",
+                type: 'POST',
+                tradition: true,
+                dataType: 'json',
+                data: {time: time},
+                success: function (data) {
+                    if (data.state == "success") {
+                        income_year(data.income_year, data.total_income_year)
+                    } else if (data.state == "null") {
+                        $.scojs_message('没有查询到' + time + '相关信息', $.scojs_message.TYPE_ERROR);
+
+                        income_year(data.income_year, data.total_income_year)
+                    }
+                },
+
+
+            })
+        }
+
+        function income_year(data, totalIcome) {
+            var histogram = echarts.init(document.getElementById('main'), "walden");
+            option = {
+                title: {
+                    text: '年收入' + totalIcome,
+                    subtext: '单位（元）'
+                },
+                tooltip: {
+                    trigger: 'axis'
+                },
+                legend: {
+                    data: ['月收入']
+                },
+                toolbox: {
+                    show: true,
+                    feature: {
+                        dataView: {show: true, readOnly: false},
+                        magicType: {show: true, type: ['line', 'bar']},
+                        restore: {show: true},
+                        saveAsImage: {show: true}
+                    }
+                },
+                calculable: true,
+                xAxis: [
+                    {
+                        type: 'category',
+                        data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+                    }
+                ],
+                yAxis: [
+                    {
+                        type: 'value'
+                    }
+                ],
+                series: [
+                    {
+                        name: '月收入',
+                        type: 'bar',
+                        data: data,
+                        markPoint: {
+                            data: [
+                                {type: 'max', name: '最大值'},
+                                {type: 'min', name: '最小值'}
+                            ]
+                        },
+                        markLine: {
+                            data: [
+                                {type: 'average', name: '平均值'}
+                            ]
+                        }
+                    }
+                ]
+            };
+
+            histogram.setOption(option);
+        }
+
+    </script>
+
+{% endblock %}

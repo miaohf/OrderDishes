@@ -89,9 +89,3 @@ def update_kind_action(request):
     kinds = Kind.objects.filter(state=True)
     menus = Menu.objects.filter(state=True)
     return render(request, 'checkstand/managekind.html', {'kinds': kinds, 'menus': menus})
-
-
-def query_ajax(request):
-    name = request.POST.get('username')
-    Menu.objects.get(name=name)
-    return HttpResponse('success')

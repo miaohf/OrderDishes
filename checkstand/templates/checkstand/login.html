@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>登陆</title>
+    {% load staticfiles %}
+    <link href="{% static 'bootstrapt/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'bootstrapt/css/signin.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrapt/css/buttons.css' %}" rel="stylesheet">
+    <script src="{% static 'bootstrapt/js/html5shiv.min.js' %}"></script>
+    <script src="{% static 'bootstrapt/js/respond.min.js' %}"></script>
+    <![endif]-->
+    <style>
+        body {
+            padding: 90px 0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <form class="form-signin" method="post" action="{% url 'checkstand:login' %}">
+        {% csrf_token %}
+        <div style="text-align: center">
+            <img src="{% static 'brand/logo.png' %}">
+            <h2 class="form-signin-heading">点餐管理登陆</h2>
+        </div>
+        <br>
+        <label for="inputEmail" class="sr-only">账户</label>
+        <input id="inputEmail" type="text" name="username" class="form-control" placeholder="账户" required autofocus>
+        <label for="inputPassword" class="sr-only">密码</label>
+        <input type="password" name="password" id="inputPassword" class="form-control" placeholder="密码" required>
+        <div id="remberpassword" class="checkbox">
+            <label>
+                <input type="checkbox" value="remember-me"> 记住密码
+            </label>
+        </div>
+        {% if message %}
+            <p style="color: red">{{ message }}</p>
+        {% endif %}
+        <button class="button  button-primary btn-block" type="submit">登陆</button>
+    </form>
+</div> <!-- /container -->
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

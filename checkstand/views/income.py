@@ -7,6 +7,8 @@ import json
 import re
 import calendar
 
+from django.contrib.auth.decorators import login_required
+
 
 def day(request):
     return render(request, 'checkstand/incomeday.html')

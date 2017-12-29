@@ -44,3 +44,23 @@ class OrderDetail(models.Model):
     order = models.ForeignKey('Order')
     menu = models.ForeignKey('Menu')
     num = models.IntegerField()
+
+
+class Seller(models.Model):
+    gender = (
+        ('male', "男"),
+        ('female', "女"),
+    )
+    name = models.CharField(max_length=16)
+    password = models.CharField(max_length=16)
+    email = models.EmailField(unique=True)
+    sex = models.CharField(max_length=10, choices=gender, default='男')
+    create_time = models.TimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.name
+
+    class Meta:
+        ordering = ["-create_time"]
+        verbose_name = "用户"
+        verbose_name_plural = "用户"

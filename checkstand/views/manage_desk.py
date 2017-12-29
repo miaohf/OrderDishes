@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from checkstand.models import Desk
 from django.conf import settings
-from django.http import JsonResponse
+from django.http import JsonResponse,HttpResponse
 from django.core import serializers
 import qrcode
 import os
@@ -21,12 +21,13 @@ def index(request):
 
 def add_many(request):
     domain = request.POST.get('domain')
-    prot = request.POST.get('prot')
+    prot = request.POST.get('port')
     number = request.POST.get('number')
     start = Desk.objects.count() + 1
     end = start + int(number)
     for i in range(start, end):
         url = 'http://{domain}:{prot}/order/desk={desk_id}'.format(domain=domain, prot=prot, desk_id=i)
+        print(url)
         img_name = "desk_" + str(i) + ".jpg"
         path = os.path.join(settings.MEDIA_ROOT, 'desks', img_name)
         img = qrcode.make(url)

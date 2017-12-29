@@ -1,0 +1,305 @@
+{% extends 'checkstand/index.html' %}
+
+{% block nav_menu %}class="active"{% endblock %}
+
+{% block html_content %}
+    <div style="margin-bottom: 20px">
+        <button class="button   button-primary   button-primary" data-toggle="modal"
+                data-target="#addMenu">
+            新增菜品
+        </button>
+
+
+        <form class="form-search pull-right">
+            <input type="text" name="username" id="queryname" class="input-medium search-query">
+            <button type="submit" class="button button-circle button-primary ">
+                <span class="glyphicon glyphicon-search"/></button>
+        </form>
+    </div>
+    <div>
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active">
+                <a href="#allmenu" aria-controls="allmenu" role="tab"
+                   data-toggle="tab">全部</a>
+            </li>
+
+            {% for kind in kinds %}
+                <li role="presentation">
+                    <a href="#home{{ kind.id }}" aria-controls="home{{ kind.id }}" role="tab"
+                       data-toggle="tab">{{ kind.name }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <div class="tab-content">
+            <div role="tabpane0" class="tab-pane active" id="allmenu">
+                <div class="row placeholders" style="padding-top: 30px">
+                    {% for menu in menus %}
+                        <div class="col-sm-6 col-md-3 placeholder">
+                            <div class="thumbnail">
+                                <img src="/media/{{ menu.img }}" class="img-responsive">
+                                <div class="caption">
+                                    <h3>{{ menu.name }}</h3>
+                                    <p>价格：{{ menu.price }}元</p>
+
+                                    <button class="button button-primary  button-small "
+                                            data-toggle="modal"
+                                            data-target="#image{{ menu.id }}">
+                                        查看原图
+                                    </button>
+                                    <div class="modal fade" id="image{{ menu.id }}" tabindex="-1" role="dialog"
+                                         aria-labelledby="myLargeModalLabel">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <img src="/media/{{ menu.img }}" style="width: auto;height: auto">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% for kind in kinds %}
+                <div role="tabpane{{ kind.id }}" class="tab-pane" id="home{{ kind.id }}">
+                    <div class="row placeholders" style="padding-top: 30px">
+                        {% for menu in menus %}
+                            {% ifequal kind.id menu.kind_id %}
+                                <div class="col-sm-6 col-md-3 placeholder">
+                                    <div class="thumbnail">
+                                        <img src="/media/{{ menu.img }}">
+                                        <div class="caption">
+                                            <h3>{{ menu.name }}</h3>
+                                            <p>价格：{{ menu.price }}元</p>
+                                            <div class="button-group">
+                                                <button class="button button-primary  button-small"
+                                                        data-toggle="modal"
+                                                        data-target="#update{{ menu.id }}">
+                                                    修改
+                                                </button>
+                                                <button class="button  button-small"
+                                                        data-toggle="modal"
+                                                        data-target="#delete{{ menu.id }}">删除
+                                                </button>
+                                            </div>
+                                            <div class="modal fade" id="update{{ menu.id }}" tabindex="-1"
+                                                 role="dialog"
+                                                 aria-labelledby="myModalLabel"
+                                                 aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close"
+                                                                    data-dismiss="modal" aria-hidden="true">
+                                                                &times;
+                                                            </button>
+                                                            <h4 class="modal-title" id="myModalLabel">
+                                                                修改菜品
+                                                            </h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form class="form-horizontal"
+                                                                  action="{% url 'checkstand:action_menu_update' %}"
+                                                                  method="post" enctype="multipart/form-data">
+                                                                {% csrf_token %}
+
+                                                                <div class="form-group">
+                                                                    <label class="col-md-2"
+                                                                           for="updateid">编号：</label>
+                                                                    <div class="col-md-10">
+                                                                        <input type="text" id="updateid"
+                                                                               class="form-control" name="id"
+                                                                               value="{{ menu.id }} "
+                                                                               readonly="readonly"/>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <label class="col-md-2"
+                                                                           for="updatename">菜名：</label>
+                                                                    <div class="col-md-10">
+                                                                        <input type="text" id="updatename"
+                                                                               class="form-control" name="name"
+                                                                               placeholder="修改菜名"
+                                                                               value="{{ menu.name }}"/>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <label class="col-md-2"
+                                                                           for="updateprice">价格：</label>
+                                                                    <div class="col-md-10">
+                                                                        <input type="text" id="updateprice"
+                                                                               class="form-control" name="price"
+                                                                               placeholder="修改价格"
+                                                                               value="{{ menu.price }}">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="form-group">
+                                                                    <label class="col-md-2"
+                                                                           for="updateimg">图片：</label>
+                                                                    <div class="col-md-10">
+                                                                        <input type="file" id="updateimg"
+                                                                               class="form-control" name="img"
+                                                                               value="{{ menu.img }}">
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="modal-footer">
+                                                                    <div class="button-group">
+                                                                        <button type="submit"
+                                                                                class="button button-primary button-small">
+                                                                            确定
+                                                                        </button>
+                                                                        <button type="button"
+                                                                                class="button button-small"
+                                                                                data-dismiss="modal">
+                                                                            关闭
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal fade" id="delete{{ menu.id }}" tabindex="-1"
+                                                 role="dialog" aria-labelledby="myModalLabel"
+                                                 aria-hidden="true">
+                                                <div class="modal-dialog modal-sm">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close"
+                                                                    data-dismiss="modal" aria-hidden="true">
+                                                                &times;
+                                                            </button>
+                                                            <h4 class="modal-title" id="myModalLabel">
+                                                                确认删除
+                                                            </h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form action="{% url 'checkstand:action_menu_delete' %}"
+                                                                  method="post">
+                                                                {% csrf_token %}
+
+                                                                <input type="" id="del_id" class="form-control"
+                                                                       name="id" value="{{ menu.id }}"
+                                                                       style="display: none">
+
+                                                                <table class="table table-bordered">
+                                                                    <thead>
+                                                                    <tr>
+                                                                        <th>编号</th>
+                                                                        <th>菜名</th>
+                                                                        <th>价格</th>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>{{ menu.id }}</td>
+                                                                        <td>{{ menu.name }}</td>
+                                                                        <td>{{ menu.price }}</td>
+                                                                    </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                    </tbody>
+                                                                </table>
+
+                                                                <div class="modal-footer">
+                                                                    <div class="button-group">
+                                                                        <button type="submit"
+                                                                                class="button button-primary button-small">
+                                                                            确定
+                                                                        </button>
+                                                                        <button type="button"
+                                                                                class="button button-small"
+                                                                                data-dismiss="modal">
+                                                                            关闭
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            {% endifequal %}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+{% block modal %}
+    <div class="modal fade" id="addMenu" tabindex="-1" role="dialog"
+         aria-labelledby="addMenuModalLabe"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content" style="text-align: center">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="addMenuModalLabe">
+                        新增菜单
+                    </h4>
+                </div>
+                <div class="modal-body">
+                    <form class="form-horizontal" action="{% url 'checkstand:action_menu_create' %}" method="post"
+                          enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label class="col-md-2" for="newname">菜名：</label>
+                            <div class="col-md-10">
+                                <input type="text" id="newname" class="form-control " name="name"
+                                       placeholder="新增菜名">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2" for="newprice">价格：</label>
+                            <div class="col-md-10">
+                                <input type="text" id="newprice" class="form-control"
+                                       name="price" placeholder="新增价格">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2" for="newkindname">类型：</label>
+                            <div class="col-md-10">
+                                <select class="form-control m-bot15" id="newkindname" name="kind_name">
+                                    {% for kind in kinds %}
+                                        <option>{{ kind.name }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-2" for="newimg">图片：</label>
+                            <div class="col-md-10">
+                                <input type="file" id="newimg" class="form-control" name="img">
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <div class="button-group">
+                                <button type="submit"
+                                        class="button button-primary button-small">
+                                    确定
+                                </button>
+                                <button type="button"
+                                        class="button button-small"
+                                        data-dismiss="modal">
+                                    关闭
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block js_content %}{% endblock %}
+

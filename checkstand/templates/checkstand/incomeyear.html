@@ -1,4 +1,17 @@
 {% extends 'checkstand/index.html' %}
+{% load staticfiles %}
+{% block css %}
+    <link href="{% static 'bootstrapt/css/bootstrap-datetimepicker.min.css' %}" rel="stylesheet" media="screen">
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'bootstrapt/js/echarts.min.js' %}"></script>
+    <script src="{% static 'bootstrapt/js/walden.js' %}"></script>
+    <script src="{% static 'bootstrapt/js/bootstrap-datetimepicker.js' %}"></script>
+    <script src="{% static 'bootstrapt/js/bootstrap-datetimepicker.zh-CN.js' %}"></script>
+{% endblock %}
+
+
 
 {% block nav_year %}class="active"{% endblock %}
 

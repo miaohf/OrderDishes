@@ -4,6 +4,8 @@ from django.core.paginator import Paginator, PageNotAnInteger, EmptyPage
 from django.http import HttpResponse, Http404
 
 
+
+
 def paging(request, page):
     try:
         currentpage = int(page)

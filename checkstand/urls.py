@@ -1,5 +1,6 @@
 from django.conf.urls import url
-from checkstand.views import home, historyorders, managemenu, managedesk, income, analyze
+from checkstand.views import home, history_orders, manage_menu, manage_desk, income, analyze, login
+from django.contrib.auth import views as auth_view
 
 urlpatterns = [
 
@@ -8,25 +9,25 @@ urlpatterns = [
     url(r'^paybill/$', home.pay_bill, name='pay_bill'),
     url(r'^showorderdetal/$', home.show_order_detal, name='show_order_detal'),
     # ---历史订单----
-    url(r'^history/page=(?P<page>\d+)$', historyorders.paging, name='page'),
+    url(r'^history/page=(?P<page>\d+)$', history_orders.paging, name='page'),
 
     # ---管理功能----
     # --桌号--
-    url(r'^managedesk/$', managedesk.index, name='manage_desk'),
-    url(r'^deskaddmany/$', managedesk.add_many, name='desk_add_many'),
-    url(r'^deskdelsingle/$', managedesk.del_single, name='desk_del_single'),
+    url(r'^managedesk/$', manage_desk.index, name='manage_desk'),
+    url(r'^deskaddmany/$', manage_desk.add_many, name='desk_add_many'),
+    url(r'^deskdelsingle/$', manage_desk.del_single, name='desk_del_single'),
     # --菜类--
-    url(r'^managekind/$', managemenu.kind_index, name='manage_kind'),
+    url(r'^managekind/$', manage_menu.kind_index, name='manage_kind'),
 
-    url(r'^actionkindcreate/$', managemenu.add_kind_action, name='action_kind_create'),
-    url(r'^actionkindupdate/$', managemenu.update_kind_action, name='action_kind_update'),
-    url(r'^actionkinddelete/$', managemenu.delete_kind_action, name='action_kind_delete'),
+    url(r'^actionkindcreate/$', manage_menu.add_kind_action, name='action_kind_create'),
+    url(r'^actionkindupdate/$', manage_menu.update_kind_action, name='action_kind_update'),
+    url(r'^actionkinddelete/$', manage_menu.delete_kind_action, name='action_kind_delete'),
     # --菜品--
-    url(r'^menumanage/$', managemenu.index, name='manage_menu'),
+    url(r'^menumanage/$', manage_menu.index, name='manage_menu'),
 
-    url(r'^actionmenucreate/$', managemenu.create_menu_action, name='action_menu_create'),
-    url(r'^actionmenuupdate/$', managemenu.update_menu_action, name='action_menu_update'),
-    url(r'^actionmenudelete/$', managemenu.delete_menu_action, name='action_menu_delete'),
+    url(r'^actionmenucreate/$', manage_menu.create_menu_action, name='action_menu_create'),
+    url(r'^actionmenuupdate/$', manage_menu.update_menu_action, name='action_menu_update'),
+    url(r'^actionmenudelete/$', manage_menu.delete_menu_action, name='action_menu_delete'),
 
     # ----收入----
     url(r'^incomeday/$', income.day, name='income_day'),
@@ -40,4 +41,8 @@ urlpatterns = [
 
     url(r'^analyzeormenu/$', analyze.menu, name='analyze_menu'),
 
+    # 登陆
+    url(r'^loginpage/$', login.login_index, name='login_page'),
+    url(r'^login/$', login.login, name='login'),
+    url(r'^logout/$', login.logout, name='logout'),
 ]

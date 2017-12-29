@@ -47,7 +47,7 @@ def update_menu_action(request):
         with open(path, 'wb') as pic:
             for p in img.chunks():
                 pic.write(p)
-        Menu.objects.filter(id=id).update(name=name, price=price, img='images/%s' % img.name)
+        Menu.objects.filter(id=id).update(name=name, price=price, img='menus/%s' % img.name)
     except AttributeError:
         Menu.objects.filter(id=id).update(name=name, price=price)
     kinds = Kind.objects.filter(state=True)

@@ -2,17 +2,85 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6bfa8154-a6ae-4780-bf1b-7d9fce32c014" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/checkstand/migrations/0002_seller.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/checkstand/templates/checkstand/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/checkstand/templates/checkstand/login.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/checkstand/templates/checkstand/managedesk.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/checkstand/templates/checkstand/managemenu.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/checkstand/views/login.py" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_10.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_15.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_16.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_17.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_18.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_19.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_20.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_21.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_22.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_23.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_24.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_25.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_26.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_27.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_28.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_29.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_30.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_31.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_32.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_33.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_34.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_35.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_36.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_37.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_38.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_39.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_4.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_40.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_5.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_6.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_7.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_8.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/desks/desk_9.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/menus/1188490_34235c.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/menus/1190836_a4dd19.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/menus/1190836_b3321c.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/menus/1199140_e90989.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/menus/1199359_b53446.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/menus/20171227184229.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/menus/58f626e2e4dd02509d1e916a.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/menus/590a8e15d6375549a7ad64e3.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/menus/591543f2ea501921ca882202.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/menus/59269d50d6375549a7ade2b2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/menus/592d07acd6375549a7adfd66.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/menus/592e2ae7d6375549a7ae0068.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/menus/593f4356ea501969f5b290e4 (1).jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/menus/594296b9f226b56844159d56.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/menus/59493505e4dd0254043d6124.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/menus/59509779ea50193e10e4f670.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/media/menus/595bb39fd637550fb408d768.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/bootstrapt/css/signin.css" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrapt/css/bootstrap-datetimepicker.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrapt/css/bootstrap-theme.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrapt/css/bootstrap-theme.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrapt/css/bootstrap-theme.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrapt/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrapt/css/bootstrap.css" afterPath="$PROJECT_DIR$/static/bootstrapt/css/bootstrap.css" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrapt/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/static/bootstrapt/css/bootstrap.min.css" />
+      <change beforePath="$PROJECT_DIR$/checkstand/admin.py" afterPath="$PROJECT_DIR$/checkstand/admin.py" />
+      <change beforePath="$PROJECT_DIR$/checkstand/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/checkstand/migrations/0001_initial.py" />
+      <change beforePath="$PROJECT_DIR$/checkstand/models.py" afterPath="$PROJECT_DIR$/checkstand/models.py" />
+      <change beforePath="$PROJECT_DIR$/checkstand/templates/checkstand/analyzemenu.html" afterPath="$PROJECT_DIR$/checkstand/templates/checkstand/analyzemenu.html" />
+      <change beforePath="$PROJECT_DIR$/checkstand/templates/checkstand/incomeday.html" afterPath="$PROJECT_DIR$/checkstand/templates/checkstand/incomeday.html" />
+      <change beforePath="$PROJECT_DIR$/checkstand/templates/checkstand/incomemonth.html" afterPath="$PROJECT_DIR$/checkstand/templates/checkstand/incomemonth.html" />
+      <change beforePath="$PROJECT_DIR$/checkstand/templates/checkstand/incomeyear.html" afterPath="$PROJECT_DIR$/checkstand/templates/checkstand/incomeyear.html" />
+      <change beforePath="$PROJECT_DIR$/checkstand/urls.py" afterPath="$PROJECT_DIR$/checkstand/urls.py" />
+      <change beforePath="$PROJECT_DIR$/checkstand/views/historyorders.py" afterPath="$PROJECT_DIR$/checkstand/views/history_orders.py" />
+      <change beforePath="$PROJECT_DIR$/checkstand/views/home.py" afterPath="$PROJECT_DIR$/checkstand/views/home.py" />
+      <change beforePath="$PROJECT_DIR$/checkstand/views/income.py" afterPath="$PROJECT_DIR$/checkstand/views/income.py" />
+      <change beforePath="$PROJECT_DIR$/checkstand/views/managedesk.py" afterPath="$PROJECT_DIR$/checkstand/views/manage_desk.py" />
+      <change beforePath="$PROJECT_DIR$/checkstand/views/managemenu.py" afterPath="$PROJECT_DIR$/checkstand/views/manage_menu.py" />
+      <change beforePath="$PROJECT_DIR$/media/desks/desk_11.jpg" afterPath="$PROJECT_DIR$/media/desks/desk_11.jpg" />
+      <change beforePath="$PROJECT_DIR$/media/desks/desk_12.jpg" afterPath="$PROJECT_DIR$/media/desks/desk_12.jpg" />
+      <change beforePath="$PROJECT_DIR$/media/desks/desk_13.jpg" afterPath="$PROJECT_DIR$/media/desks/desk_13.jpg" />
+      <change beforePath="$PROJECT_DIR$/media/desks/desk_14.jpg" afterPath="$PROJECT_DIR$/media/desks/desk_14.jpg" />
       <change beforePath="$PROJECT_DIR$/static/bootstrapt/css/dashboard.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrapt/js/bootstrap.js" afterPath="$PROJECT_DIR$/static/bootstrapt/js/bootstrap.js" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrapt/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/static/bootstrapt/js/bootstrap.min.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,53 +133,65 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="714">
+              <caret line="48" column="11" lean-forward="false" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="incomeyear.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/incomeyear.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="83" column="33" lean-forward="false" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+            <state relative-caret-position="169">
+              <caret line="10" column="90" lean-forward="false" selection-start-line="10" selection-start-column="90" selection-end-line="10" selection-end-column="90" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/bootstrapt/css/bootstrap.css">
+      <file leaf-file-name="homepage.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/homepage.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="329">
+              <caret line="77" column="20" lean-forward="false" selection-start-line="77" selection-start-column="20" selection-end-line="89" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="analyzemenu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/analyzemenu.html">
+      <file leaf-file-name="signin.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/bootstrapt/css/signin.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            <state relative-caret-position="849">
+              <caret line="56" column="23" lean-forward="false" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checkstand/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/OrderDishes/urls.py">
+        <entry file="file://$PROJECT_DIR$/checkstand/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/bootstrapt/js/bootstrap.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="696">
+              <caret line="46" column="34" lean-forward="false" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
               <folding>
-                <marker date="1489333910000" expanded="true" signature="0:5" ph="/*...*/" />
+                <element signature="e#0#32#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,19 +200,34 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="50" column="39" lean-forward="false" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
+            <state relative-caret-position="118">
+              <caret line="27" column="39" lean-forward="false" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#4182#4189#1#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checkstand/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="709">
+              <caret line="64" column="27" lean-forward="true" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="managemenu.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/managemenu.html">
+      <file leaf-file-name="home.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/checkstand/views/home.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-              <folding />
+            <state relative-caret-position="101">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,9 +239,9 @@
       <list>
         <option value="CSS File" />
         <option value="Setup Script" />
+        <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="Python Script" />
-        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -156,16 +251,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/static/bootstrapt/css/buttons.css" />
-        <option value="$PROJECT_DIR$/OrderDishes/settings.py" />
-        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/dayincome.html" />
-        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/monthincome.html" />
-        <option value="$PROJECT_DIR$/static/bootstrapt/js/shine.js" />
-        <option value="$PROJECT_DIR$/static/bootstrapt/js/walden.js" />
-        <option value="$PROJECT_DIR$/order/admin.py" />
-        <option value="$PROJECT_DIR$/checkstand/admin.py" />
         <option value="$PROJECT_DIR$/order/models.py" />
-        <option value="$PROJECT_DIR$/order/urls.py" />
         <option value="$PROJECT_DIR$/order/templates/order/index.html" />
         <option value="$PROJECT_DIR$/static/bootstrapt/js/printThis.js" />
         <option value="$PROJECT_DIR$/static/bootstrapt/js/jquery-migrate-1.2.1.min.js" />
@@ -178,27 +264,11 @@
         <option value="$PROJECT_DIR$/checkstand/templates/checkstand/deskmanage.html" />
         <option value="$PROJECT_DIR$/checkstand/views/menumanage.py" />
         <option value="$PROJECT_DIR$/checkstand/views/deskmanage.py" />
-        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/managedesk.html" />
         <option value="$PROJECT_DIR$/checkstand/templates/checkstand/analyzeorder.html" />
-        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/incomemonth.html" />
-        <option value="$PROJECT_DIR$/checkstand/views/managemenu.py" />
-        <option value="$PROJECT_DIR$/checkstand/views/managedesk.py" />
-        <option value="$PROJECT_DIR$/checkstand/models.py" />
-        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/incomeyear.html" />
         <option value="$PROJECT_DIR$/order/views.py" />
-        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/analyzemenu.html" />
-        <option value="$PROJECT_DIR$/checkstand/urls.py" />
-        <option value="$PROJECT_DIR$/checkstand/views/home.py" />
-        <option value="$PROJECT_DIR$/checkstand/views/historyorders.py" />
-        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/historyorders.html" />
-        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/homepage.html" />
-        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/incomeday.html" />
         <option value="$PROJECT_DIR$/checkstand/templates/checkstand/managekind.html" />
-        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/managemenu.html" />
         <option value="$PROJECT_DIR$/checkstand/tests.py" />
         <option value="$PROJECT_DIR$/checkstand/views/analyze.py" />
-        <option value="$PROJECT_DIR$/checkstand/views/income.py" />
-        <option value="$PROJECT_DIR$/static/bootstrapt/css/dashboard.css" />
         <option value="$PROJECT_DIR$/static/bootstrapt/css/bootstrap-datetimepicker.min.css" />
         <option value="$PROJECT_DIR$/static/bootstrapt/css/bootstrap.min.css" />
         <option value="$PROJECT_DIR$/static/bootstrapt/css/bootstrap.css.map" />
@@ -206,6 +276,31 @@
         <option value="$PROJECT_DIR$/static/bootstrapt/js/bootstrap.js" />
         <option value="$PROJECT_DIR$/static/bootstrapt/js/echarts.min.js" />
         <option value="$PROJECT_DIR$/static/bootstrapt/js/jquery-1.12.0.min.js" />
+        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/homepage.html" />
+        <option value="$PROJECT_DIR$/static/bootstrapt/js/html5shiv.min.js" />
+        <option value="$PROJECT_DIR$/static/bootstrapt/js/respond.min.js" />
+        <option value="$PROJECT_DIR$/checkstand/views/historyorders.py" />
+        <option value="$PROJECT_DIR$/checkstand/views/income.py" />
+        <option value="$PROJECT_DIR$/checkstand/views/managemenu.py" />
+        <option value="$PROJECT_DIR$/order/urls.py" />
+        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/managemenu.html" />
+        <option value="$PROJECT_DIR$/checkstand/views/managedesk.py" />
+        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/historyorders.html" />
+        <option value="$PROJECT_DIR$/static/bootstrapt/css/dashboard.css" />
+        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/incomeday.html" />
+        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/incomemonth.html" />
+        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/incomeyear.html" />
+        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/managedesk.html" />
+        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/analyzemenu.html" />
+        <option value="$PROJECT_DIR$/OrderDishes/settings.py" />
+        <option value="$USER_HOME$/Anaconda3/Lib/site-packages/django/contrib/auth/views.py" />
+        <option value="$PROJECT_DIR$/checkstand/models.py" />
+        <option value="$PROJECT_DIR$/checkstand/admin.py" />
+        <option value="$PROJECT_DIR$/checkstand/views/login.py" />
+        <option value="$PROJECT_DIR$/checkstand/urls.py" />
+        <option value="$PROJECT_DIR$/checkstand/views/home.py" />
+        <option value="$PROJECT_DIR$/static/bootstrapt/css/signin.css" />
+        <option value="$PROJECT_DIR$/checkstand/templates/checkstand/login.html" />
         <option value="$PROJECT_DIR$/checkstand/templates/checkstand/index.html" />
       </list>
     </option>
@@ -217,8 +312,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="466" />
-    <option name="y" value="16" />
+    <option name="x" value="192" />
+    <option name="y" value="40" />
     <option name="width" value="1612" />
     <option name="height" value="879" />
   </component>
@@ -265,12 +360,40 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="OrderDishes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OrderDishes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OrderDishes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OrderDishes" type="462c0819:PsiDirectoryNode" />
+              <item name="checkstand" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OrderDishes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OrderDishes" type="462c0819:PsiDirectoryNode" />
+              <item name="checkstand" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OrderDishes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OrderDishes" type="462c0819:PsiDirectoryNode" />
+              <item name="checkstand" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="checkstand" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OrderDishes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OrderDishes" type="462c0819:PsiDirectoryNode" />
+              <item name="checkstand" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OrderDishes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OrderDishes" type="462c0819:PsiDirectoryNode" />
               <item name="OrderDishes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -284,11 +407,19 @@
               <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="bootstrapt" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="OrderDishes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OrderDishes" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrapt" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -301,18 +432,18 @@
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\TanJie\PycharmProjects\OrderDishes\static\bootstrapt\js" />
-      <recent name="C:\Users\TanJie\PycharmProjects\OrderDishes\static\bootstrapt" />
-      <recent name="C:\Users\TanJie\PycharmProjects\OrderDishes\static\brand" />
-      <recent name="C:\Users\TanJie\PycharmProjects\OrderDishes\static\bootstrapt\css" />
-      <recent name="C:\Users\TanJie\PycharmProjects\OrderDishes" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\TanJie\PycharmProjects\OrderDishes\static\bootstrapt\css" />
       <recent name="C:\Users\TanJie\PycharmProjects\OrderDishes\static\bootstrapt" />
       <recent name="C:\Users\TanJie\PycharmProjects\OrderDishes" />
       <recent name="C:\Users\TanJie\PycharmProjects\OrderDishes\order" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\TanJie\PycharmProjects\OrderDishes\static\brand" />
+      <recent name="C:\Users\TanJie\PycharmProjects\OrderDishes\static\bootstrapt\css" />
+      <recent name="C:\Users\TanJie\PycharmProjects\OrderDishes\static\bootstrapt\js" />
+      <recent name="C:\Users\TanJie\PycharmProjects\OrderDishes\static\bootstrapt" />
+      <recent name="C:\Users\TanJie\PycharmProjects\OrderDishes" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -341,7 +472,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="OrderDishes" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/checkstand/views/historyorders.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\TanJie\PycharmProjects\OrderDishes\checkstand\views\history_orders.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -491,7 +622,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514108557740</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="还原bootstrapt3">
+      <created>1514363065631</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1514363065631</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -506,20 +644,20 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
+      <window_info id="manage.py@OrderDishes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2424581" sideWeight="0.4936034" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29053319" sideWeight="0.5063966" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28182808" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32535365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32513967" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28182808" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15724947" sideWeight="0.4961915" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16791044" sideWeight="0.4961915" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28997868" sideWeight="0.5038085" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="manage.py@OrderDishes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24809575" sideWeight="0.4936034" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -533,6 +671,34 @@
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="manage.py@OrderDishes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30852503" sideWeight="0.4936034" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29053319" sideWeight="0.5063966" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="0" y="0" width="434" height="856" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28182808" sideWeight="0.4978678" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32535365" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32861805" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21131805" sideWeight="0.4961915" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28997868" sideWeight="0.5038085" order="2" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -586,314 +752,20 @@
     <MESSAGE value="实现桌号管理功能，并且实现打印二维码功能" />
     <MESSAGE value="改用模版继承" />
     <MESSAGE value="规范命名" />
-    <option name="LAST_COMMIT_MESSAGE" value="规范命名" />
+    <MESSAGE value="还原bootstrapt3" />
+    <option name="LAST_COMMIT_MESSAGE" value="还原bootstrapt3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="10" />
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/checkstand/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="40" lean-forward="false" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order/templates/order/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="36" column="62" lean-forward="false" selection-start-line="36" selection-start-column="62" selection-end-line="36" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/views/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/views/managemenu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/analyzeorder.html" />
-    <entry file="file://$PROJECT_DIR$/checkstand/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/views/home.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="9" column="40" lean-forward="false" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/views/historyorders.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" column="31" lean-forward="false" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/historyorders.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="63" lean-forward="false" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/incomemonth.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="31" lean-forward="false" selection-start-line="45" selection-start-column="31" selection-end-line="45" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/homepage.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="16" column="35" lean-forward="false" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/views/managedesk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="29" column="44" lean-forward="true" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/managedesk.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" column="55" lean-forward="false" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="55" />
-          <folding>
-            <element signature="n#block#2;n#!!top" expanded="false" />
-            <element signature="n#block#3;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/managekind.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/managemenu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/views/analyze.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="41" column="16" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/incomeday.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="34" column="43" lean-forward="false" selection-start-line="34" selection-start-column="43" selection-end-line="34" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/views/income.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="50" column="13" lean-forward="false" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrapt/css/bootstrap.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-35841">
-          <caret line="71" column="4325" lean-forward="false" selection-start-line="71" selection-start-column="4325" selection-end-line="71" selection-end-column="4325" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrapt/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="6360" column="1" lean-forward="true" selection-start-line="6360" selection-start-column="1" selection-end-line="6360" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrapt/js/echarts.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5372">
-          <caret line="321" column="0" lean-forward="true" selection-start-line="321" selection-start-column="0" selection-end-line="321" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrapt/js/jquery-1.12.0.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-42628">
-          <caret line="302" column="36" lean-forward="false" selection-start-line="302" selection-start-column="36" selection-end-line="302" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrapt/js/npm.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrapt/js/printThis.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4078">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrapt/js/sco.message.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrapt/js/walden.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7701">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrapt/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38415">
-          <caret line="34" column="52" lean-forward="false" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrapt/fonts/glyphicons-halflings-regular.svg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrapt/css/scojs.css" />
-    <entry file="file://$PROJECT_DIR$/static/bootstrapt/css/dashboard.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2074">
-          <caret line="122" column="30" lean-forward="false" selection-start-line="122" selection-start-column="30" selection-end-line="122" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrapt/css/buttons.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="37" column="47" lean-forward="false" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrapt/css/bootstrap-theme.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrapt/css/bootstrap-theme.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrapt/css/bootstrap-theme.min.css.map">
-      <provider editor-type-id="sourcemapFileViewerProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrapt/css/bootstrap-theme.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/bootstrapt/css/bootstrap-datetimepicker.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5134">
           <caret line="302" column="0" lean-forward="false" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/OrderDishes/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -904,10 +776,243 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/OrderDishes/settings.py">
+    <entry file="file://$PROJECT_DIR$/static/bootstrapt/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bootstrapt/js/bootstrap.bundle.js" />
+    <entry file="file://$PROJECT_DIR$/static/bootstrapt/js/bootstrap.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bootstrapt/js/html5shiv.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1293">
+          <caret line="80" column="58" lean-forward="false" selection-start-line="80" selection-start-column="58" selection-end-line="80" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bootstrapt/js/respond.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="111" column="8" lean-forward="false" selection-start-line="111" selection-start-column="8" selection-end-line="111" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/menus/02f490d059633f0df444eb88.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/menus/58d9d632e4dd02509d1df72c.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/menus/58bd0a35d6375577bbaa901b.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/menus/1190259_a6d8ce.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/menus/1190836_b3321c.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/menus/20171227184229.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/menus/1201312_646f7b.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/menus/1200529_0b84bb.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/menus/597c83fdf226b54cfc81396a.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="15" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bootstrapt/css/dashboard.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1836">
+          <caret line="108" column="0" lean-forward="false" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/views/manage_menu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" column="25" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/managemenu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="65" column="61" lean-forward="false" selection-start-line="65" selection-start-column="61" selection-end-line="65" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/analyzemenu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="14" lean-forward="false" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/django/contrib/auth/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="117" column="4" lean-forward="false" selection-start-line="117" selection-start-column="4" selection-end-line="117" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/views/manage_desk.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/django/contrib/auth/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1394">
+          <caret line="135" column="4" lean-forward="false" selection-start-line="135" selection-start-column="4" selection-end-line="135" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/views/analyze.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="41" column="16" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/views/history_orders.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="23" column="66" lean-forward="false" selection-start-line="23" selection-start-column="60" selection-end-line="23" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/views/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/incomemonth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="90" lean-forward="false" selection-start-line="9" selection-start-column="90" selection-end-line="9" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/incomeday.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="26" column="8" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="11" selection-end-column="14" />
+          <folding>
+            <element signature="n#block#3;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/historyorders.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="726">
+          <caret line="120" column="27" lean-forward="false" selection-start-line="120" selection-start-column="27" selection-end-line="120" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/managedesk.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding>
+            <element signature="n#block#3;n#!!top" expanded="false" />
+            <element signature="n#block#4;n#!!top" expanded="false" />
+            <element signature="n#block#5;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/managekind.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/views/income.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -915,6 +1020,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrderDishes/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="709">
+          <caret line="64" column="27" lean-forward="true" selection-start-line="64" selection-start-column="27" selection-end-line="64" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -922,45 +1054,98 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrapt/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrapt/js/bootstrap.bundle.js">
+    <entry file="file://$PROJECT_DIR$/checkstand/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="696">
+          <caret line="46" column="34" lean-forward="false" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/django/contrib/auth/decorators.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="44" column="40" lean-forward="true" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/views/home.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/views/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OrderDishes/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="607">
+          <caret line="43" column="44" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/bootstrapt/css/signin.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="849">
+          <caret line="56" column="23" lean-forward="false" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="714">
+          <caret line="48" column="11" lean-forward="false" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/incomeyear.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="83" column="33" lean-forward="false" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+        <state relative-caret-position="169">
+          <caret line="10" column="90" lean-forward="false" selection-start-line="10" selection-start-column="90" selection-end-line="10" selection-end-column="90" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/analyzemenu.html">
+    <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/homepage.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="35" lean-forward="false" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        <state relative-caret-position="329">
+          <caret line="77" column="20" lean-forward="false" selection-start-line="77" selection-start-column="20" selection-end-line="89" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/checkstand/templates/checkstand/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="50" column="39" lean-forward="false" selection-start-line="50" selection-start-column="39" selection-end-line="50" selection-end-column="39" />
-          <folding />
+        <state relative-caret-position="118">
+          <caret line="27" column="39" lean-forward="false" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#4182#4189#1#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

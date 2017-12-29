@@ -1,7 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse, JsonResponse
 from checkstand.models import Order, OrderDetail, Menu
-from django.core import serializers
 import json
 import re
 

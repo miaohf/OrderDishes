@@ -42,7 +42,7 @@ urlpatterns = [
     url(r'^analyzeormenu/$', analyze.menu, name='analyze_menu'),
 
     # 登陆
-    url(r'^loginpage/$', login.login_index, name='login_page'),
     url(r'^login/$', login.login, name='login'),
     url(r'^logout/$', login.logout, name='logout'),
+    url(r'^loginajax/$', login.login_ajax, name='login_ajax'),
 ]

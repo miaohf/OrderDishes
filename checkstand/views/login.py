@@ -1,5 +1,7 @@
-from django.shortcuts import render, redirect, HttpResponse
+from django.shortcuts import render, redirect
+from django.http import JsonResponse
 from checkstand.models import Seller
+from django.urls import reverse
 
 
 def login_index(request):
@@ -27,26 +29,39 @@ def login_index(request):
 def login(request):
     if request.session.get('is_login', False):
         return redirect('/checkstand/home/')
+
+    return render(request, 'checkstand/login.html', locals())
+
+    request.META.get('HTTP_REFERER', '/')
+
+
+def login_ajax(request):
     if request.method == 'POST':
-        message = "请检查填写的内容！"
+
         sellername = request.POST.get('username')
         password = request.POST.get('password')
+        remember_password = request.POST.get('remember', False)
         try:
             seller = Seller.objects.get(name=sellername)
             if seller.password == password:
                 request.session['is_login'] = True
                 request.session['seller_id'] = seller.id
                 request.session['seller_name'] = seller.name
-                return redirect('/checkstand/home/')
+
+                if remember_password != 'true':
+                    request.session.set_expiry(0)
+                response_data = {'state': 'success', 'url': reverse('checkstand:home')}
+                return JsonResponse(response_data)
             else:
                 message = "密码不正确！"
-        except:
+        except Seller.DoesNotExist:
             message = "用户不存在！"
-        return render(request, 'checkstand/login.html', locals())
+        response_data = {'state': 'fail', 'message': message}
+        return JsonResponse(response_data)
 
 
 def logout(request):
     if not request.session.get('is_login', False):
         return redirect('/checkstand/home/')
     request.session.flush()
-    return redirect('/checkstand/loginpage')
+    return redirect('/checkstand/login/')

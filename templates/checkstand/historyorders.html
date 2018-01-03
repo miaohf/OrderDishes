@@ -1,0 +1,138 @@
+{% extends 'checkstand/base/index.html' %}
+
+{% block nav_history %}class="active"{% endblock %}
+
+{% block html_content %}
+    <legend><h3>历史订单</h3></legend>
+    <div class="row placeholders">
+
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                <tr>
+                    <th>订单号</th>
+                    <th>桌号</th>
+                    <th>下单时间</th>
+                    <th>状态</th>
+                    <th>总价</th>
+                    <th>历史详情</th>
+
+                </tr>
+                </thead>
+                <tbody>
+                {% for order in orders %}
+                    <tr>
+                        <td>{{ order.id }}</td>
+                        <td>{{ order.desk_id }}</td>
+                        <td>{{ order.time|date:"Y-m-d H:i:s" }}</td>
+                        <td>
+                            {% if order.state %}
+                                <span class="label label-success">已付款</span></td>
+                            {% else %}
+                                <span class="label label-danger">未付款</span></td>
+                            {% endif %}
+                        <td>{{ order.totle_price }}</td>
+                        <td>
+                            <button type="button" class="button button-primary button-small" data-toggle="modal"
+                                    data-target="#myModal{{ order.id }}">
+                                查看详情
+                            </button>
+
+                            <div class="modal fade" id="myModal{{ order.id }}" tabindex="-1" role="dialog"
+                                 aria-labelledby="myModalLabel">
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close"><span aria-hidden="true">&times;</span>
+                                            </button>
+                                            <h4 class="modal-title" id="myModalLabel">账单详情</h4>
+                                            <p class="pull-right"
+                                               style="padding-right: 50px;margin-bottom: -10px">
+                                                订单号:{{ order.id }}</p>
+                                        </div>
+                                        <div class="modal-body" style="margin-top: -16px">
+                                            <table class="table">
+                                                <th>菜名</th>
+                                                <th>份数</th>
+                                                <th>单价</th>
+                                                <th>总价</th>
+                                                {% for order_detail in order_details %}
+                                                    {% if order.id is order_detail.order_id %}
+                                                        <tr>
+                                                            <td>{{ order_detail.menu.name }}</td>
+                                                            <td>{{ order_detail.num }}</td>
+                                                            <td>{{ order_detail.menu.price }}</td>
+                                                            <td>{% widthratio order_detail.num 1 order_detail.menu.price %}</td>
+                                                        </tr>
+                                                    {% endif %}
+                                                {% endfor %}
+
+                                                <tr>
+                                                    <td>总价</td>
+                                                    <td></td>
+                                                    <td></td>
+                                                    <td>{{ order.totle_price }}</td>
+                                                </tr>
+
+                                            </table>
+                                            <div style="padding: 10px 20px 20px 30px">
+                                                <p class="pull-left">桌号：{{ order.desk.id }}号</p>
+                                                <p class="pull-right">
+                                                    下单时间：{{ order.time|date:"Y-m-d H:i:s" }}</p>
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button"
+                                                    class="button button-small button-primary"
+                                                    data-dismiss="modal">
+                                                关闭
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <nav aria-label="Page navigation" style="text-align: center">
+        <ul class="pagination">
+
+            {% if orders.has_previous %}
+                <li>
+                    <a href="page={{ orders.previous_page_number }}" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+            {% endif %}
+
+            {% for num in paginator.page_range %}
+                {% if num == currentpage %}
+                    <li class="active"><a href="#"
+                                          style="background-color: #1b9af7;border-color: #1b9af7;">{{ currentpage }}</a>
+                    </li>
+                {% else %}
+                    <li><a href="page={{ num }}">{{ num }}</a></li>
+                {% endif %}
+            {% endfor %}
+
+            {% if orders.has_next %}
+                <li>
+                    <a href="page={{ orders.next_page_number }}" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            {% endif %}
+
+        </ul>
+    </nav>
+{% endblock %}
+
+

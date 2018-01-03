@@ -8,6 +8,11 @@ import re
 def index(request):
     orders = Order.objects.filter(state=False)
     order_details = OrderDetail.objects.all()
+    number = 0
+    for order in orders:
+        number += 1
+    request.session['unpay_order_number']=number
+    print(request.session['unpay_order_number'])
     return render(request, 'checkstand/homepage.html', locals())
 
 

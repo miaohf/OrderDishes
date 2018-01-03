@@ -45,4 +45,9 @@ urlpatterns = [
     url(r'^login/$', login.login, name='login'),
     url(r'^logout/$', login.logout, name='logout'),
     url(r'^loginajax/$', login.login_ajax, name='login_ajax'),
+    url(r'^info/$', login.info_index, name='info'),
+    url(r'^infoupdate/$', login.info_update, name='info_update'),
+    url(r'^infoupdateajax/$', login.info_update_ajax, name='info_update_ajax'),
+    url(r'^passwdupdate/$', login.passwd_update, name='passwd_update'),
+    url(r'^passwdupdateajax/$', login.passwd_update_ajax, name='passwd_update_ajax'),
 ]

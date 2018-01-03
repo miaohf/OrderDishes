@@ -1,0 +1,163 @@
+{% extends 'checkstand/base/infoindex.html' %}
+{% load staticfiles %}
+
+{% block infoupdate %}
+    class="active"
+{% endblock %}
+
+{% block html_content %}
+
+    <div class="row">
+        <legend><h2>修改信息</h2></legend>
+        <form id="updateinfo" class="form-horizontal col-md-6" enctype="multipart/form-data">
+
+            <div class="form-group">
+                <label for="head" class="col-sm-3 control-label">用户头像：</label>
+                <div class="col-md-1"></div>
+                <div class="col-sm-3">
+                    <img id="seller_head_img" src="/media/{{ seller.head }}" id="head" class="img-responsive">
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label for="update_head" class="col-sm-3 control-label">修改头像：</label>
+                <div class="col-sm-6">
+                    <input id="update_head" type="file" class="form-control">
+                    <p style="color:#5f9cc5">
+                        <br>上传格式jpg .jpeg .gif .png .bmp<br>
+                        大小小于1MB<br>
+                        上传的图片 最好是是正方形
+                    </p>
+                </div>
+
+            </div>
+            <hr>
+            <div class="form-group">
+                <label for="name" class="col-sm-3 control-label">名　　字：</label>
+                <div class="col-sm-6">
+                    <input id="name" type="text" class="form-control" value="{{ seller.name }}">
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label for="email" class="col-sm-3 control-label">邮　　箱：</label>
+                <div class="col-sm-6">
+                    <input id="email" type="email" class="form-control" value="{{ seller.email }}">
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label for="sex" class="col-sm-3 control-label">性　　别：</label>
+                <div class="col-sm-6">
+                    <select id="sex" class="form-control">
+                        {% ifequal seller.sex 'male' %}
+                            <option value="male">男</option>
+                            <option value="female">女</option>
+                        {% else %}
+                            <option value="female">女</option>
+                            <option value="male">男</option>
+                        {% endifequal %}
+                    </select>
+                </div>
+            </div>
+            <hr>
+
+            <br>
+            <div class="form-group">
+                <div class="col-md-3"></div>
+                <div class="col-md-4">
+                    <input id="rest_button" type="reset" class="button button-primary " value="还原">
+                </div>
+                <div class="col-md-4">
+                    <input type="button" data-toggle="modal" data-target="#update_info_modal"
+                           class="button button-primary"
+                           value="修改">
+                </div>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}
+
+{% block modal %}
+    <div class="modal fade" id="update_info_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="text-align: center">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">确认修改</h4>
+                </div>
+                <div class="modal-body">
+                    你是否要修改个人信息？
+                </div>
+                <div class="modal-footer">
+                    <div class="button-group">
+                        <button type="button" class="button button-small button-caution" onclick="infoUpdate()"
+                                data-dismiss="modal">
+                            确认
+                        </button>
+                        <button type="button"
+                                class="button button-small"
+                                data-dismiss="modal">
+                            关闭
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js_content %}
+    <script>
+        $._messengerDefaults = {
+            extraClasses: 'messenger-fixed messenger-theme-future messenger-on-top messenger-on-right'
+        }
+
+        $('#rest_button').click(function () {
+            $('#updateinfo').reset()
+
+        })
+
+        function infoUpdate() {
+            var name = $('#name').val()
+            var email = $('#email').val()
+            var sex = $('#sex').val()
+            var head = $("#update_head")[0].files[0];
+            var formData = new FormData();
+            formData.append("name", name);
+            formData.append("email", email);
+            formData.append("sex", sex);
+            formData.append("head", head);
+            $.ajax({
+                headers: {"X-CSRFToken": '{{ csrf_token }}'},
+                url: "{% url 'checkstand:info_update_ajax' %}",
+                type: 'POST',
+                tradition: true,
+                async: true,
+                data: formData,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    $.globalMessenger().post({
+                        message: '用户名' + data.name + "修改成功",//提示信息
+                        type: 'success',//消息类型。error、info、success
+                        hideAfter: 5,//多长时间消失
+                        showCloseButton: true,//是否显示关闭按钮
+                        hideOnNavigate: true //是否隐藏导航
+                    });
+                    $('#seller_name_nav').html('管理员：' + data.name)
+                    $('#seller_name_bar').html(data.name)
+                    $('#seller_head_img').attr('src', '/media/' + data.head)
+                    $('#seller_head_bar').attr('src', '/media/' + data.head)
+                },
+            })
+
+        }
+
+
+    </script>
+
+{% endblock %}

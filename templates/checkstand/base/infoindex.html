@@ -1,0 +1,42 @@
+{% extends 'checkstand/base/navbar.html' %}
+{% load staticfiles %}
+
+{% block css %}
+    <link href="{% static 'bootstrapt/css/messenger.css' %}" rel="stylesheet">
+    <link href="{% static 'bootstrapt/css/messenger-theme-future.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'bootstrapt/js/messenger.js' %}"></script>
+{% endblock %}
+
+{% block side_navbar %}
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar" style="text-align: center">
+            <div style="margin: 0 25% 50px 25%;">
+                <img id="seller_head_bar" src="/media/{{ request.session.seller_head }}"
+                     class="img-circle img-responsive">
+                <h2 id="seller_name_bar" style="color: #1b9af7">{{ request.session.seller_name }}</h2>
+            </div>
+            <ul class="nav nav-sidebar">
+                <li {% block nav_home %}{% endblock %}><a href="{% url 'checkstand:home' %}">返回首页</a></li>
+
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li {% block psonlinfo %}{% endblock %}><a href="{% url 'checkstand:info' %}">个人信息</a></li>
+                <li {% block infoupdate %}{% endblock %}><a href="{% url 'checkstand:info_update' %}">修改信息</a></li>
+                <li {% block passwdupdate %}{% endblock %}><a href="{% url 'checkstand:passwd_update' %}">修改密码</a></li>
+            </ul>
+
+        </div>
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            {% if request.session.is_login %}
+                {% block html_content %}{% endblock %}
+            {% else %}
+                <h1>请先登陆</h1>
+            {% endif %}
+
+        </div>
+    </div>
+{% endblock %}

@@ -53,9 +53,11 @@ class Seller(models.Model):
     )
     name = models.CharField(max_length=16)
     password = models.CharField(max_length=16)
+    head = models.ImageField(upload_to='head')
     email = models.EmailField(unique=True)
     sex = models.CharField(max_length=10, choices=gender, default='男')
-    create_time = models.TimeField(auto_now_add=True)
+    create_time = models.DateTimeField(auto_now_add=True)
+    last_login = models.DateTimeField()
 
     def __str__(self):
         return self.name

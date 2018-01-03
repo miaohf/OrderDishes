@@ -1,0 +1,188 @@
+{% extends 'checkstand/base/infoindex.html' %}
+{% block passwdupdate %}
+    class='active'
+{% endblock %}
+
+{% block html_content %}
+    <div class="row">
+        <legend><h2>修改密码</h2></legend>
+        <p style="color:#5f9cc5;margin-left: 40px">请输入你的旧密码，为了安全起见，接着要输入两遍新密码，以便我们校验你输入的是否正确。</p>
+        <form id="updateinfo" class="form-horizontal col-md-6" enctype="multipart/form-data">
+            <hr>
+            <div class="form-group">
+                <label for="old_passwd" class="col-sm-2 control-label">旧　密码：</label>
+                <div class="col-md-5">
+                    <input id="old_passwd" type="password" class="form-control">
+                </div>
+            </div>
+            <hr>
+            <div class="form-group">
+                <label for="new_passwd" class="col-sm-2 control-label">新　密码：</label>
+                <div class="col-sm-5">
+                    <input id="new_passwd" type="password" class="form-control">
+                    <p style="color:#5f9cc5"><br>你的密码不能与其他个人信息太相似。<br>
+                        你的密码必须包含至少 8 个字符。<br>
+                        你的密码不能是大家都爱用的常见密码。<br>
+                        你的密码不能全部为数字。</p>
+                </div>
+
+
+            </div>
+            <hr>
+            <div class="form-group">
+                <label for="re_passwd" class="col-sm-2 control-label">再次确认：</label>
+                <div class="col-sm-5">
+                    <input id="re_passwd" type="password" class="form-control">
+                </div>
+            </div>
+            <hr>
+            <br>
+            <div class="form-group">
+                <div class="col-md-2"></div>
+                <div class="col-md-3">
+                    <input data-toggle="modal"
+                           class="button button-primary"
+                           onclick="getForm()"
+                           value="修改">
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}
+
+{% block modal %}
+    <div class="modal fade" id="update_pass_modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="text-align: center">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">确认修改</h4>
+                </div>
+                <div class="modal-body">
+                    你是否要密码？
+                </div>
+                <div class="modal-footer">
+                    <div class="button-group">
+                        <button type="button" class="button button-small button-caution" onclick="passwd()"
+                                data-dismiss="modal">
+                            确认
+                        </button>
+                        <button type="button"
+                                class="button button-small"
+                                data-dismiss="modal">
+                            关闭
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block js_content %}
+    <script>
+        $._messengerDefaults = {
+            extraClasses: 'messenger-fixed messenger-theme-future messenger-on-top'
+        }
+
+        function error(str) {
+            $.globalMessenger().post({
+                message: str,//提示信息
+                type: 'error',//消息类型。error、info、success
+                hideAfter: 3,//多长时间消失
+                showCloseButton: true,//是否显示关闭按钮
+                hideOnNavigate: true //是否隐藏导航
+            });
+        }
+
+        function getForm() {
+            var oldPasswd = $('#old_passwd').val()
+            var newPasswd = $('#new_passwd').val()
+            var rePasswd = $('#re_passwd').val()
+            var formData = new FormData();
+            formData.append('old_passwd', oldPasswd)
+            formData.append('new_passwd', newPasswd)
+
+            if (isNull(oldPasswd, newPasswd, rePasswd)) {
+                error('错误：输入不能为空')
+            } else {
+                if (isEqual(newPasswd, rePasswd)) {
+                    if (newPasswd.length < 8) {
+                        error('错误：密码太短！')
+                    } else {
+                        $('#update_pass_modal').modal();
+                    }
+                } else {
+                    error('错误：两次密码输入不匹配！')
+                }
+            }
+        }
+
+        function isEqual(newPasswd, rePasswd) {
+            if (newPasswd == rePasswd) {
+                return true
+            }
+            return false
+        }
+
+        function isNull(oldPasswd, newPasswd, rePasswd) {
+            if (oldPasswd == '') {
+                return true
+            } else if (newPasswd == '') {
+                return true
+            } else if (rePasswd == '') {
+                return true
+            } else {
+                return false
+            }
+        }
+
+
+        function passwd() {
+            var oldPasswd = $('#old_passwd').val()
+            var newPasswd = $('#new_passwd').val()
+            var formData = new FormData();
+            formData.append('old_passwd', oldPasswd)
+            formData.append('new_passwd', newPasswd)
+            $.ajax({
+                headers: {"X-CSRFToken": '{{ csrf_token }}'},
+                url: "{% url 'checkstand:passwd_update_ajax' %}",
+                type: 'POST',
+                tradition: true,
+                async: true,
+                data: formData,
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+
+                    if (data.state == 'success') {
+                        $.globalMessenger().post({
+                            message: '成功：密码修改成功',//提示信息
+                            type: 'success',//消息类型。error、info、success
+                            hideAfter: 5,//多长时间消失
+                            showCloseButton: true,//是否显示关闭按钮
+                            hideOnNavigate: true //是否隐藏导航
+                        });
+                        cleanInput()
+                    } else {
+                        error('错误：原密码错误')
+                        $('#old_passwd').val('')
+                    }
+                },
+            })
+
+        }
+
+
+        function cleanInput() {
+            $('#old_passwd').val('')
+            $('#new_passwd').val('')
+            $('#re_passwd').val('')
+        }
+
+
+    </script>
+{% endblock %}

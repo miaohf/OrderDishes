@@ -1,0 +1,65 @@
+{% extends 'checkstand/base/navbar.html' %}
+{% load staticfiles %}
+
+{% block side_navbar %}
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar" style="text-align: center">
+            <div style="margin: 0 25% 50px 25%;">
+                <img id="seller_head_bar" src="/media/{{ request.session.seller_head }}"
+                     class="img-circle img-responsive">
+                <h2 id="seller_name_bar" style="color: #1b9af7">{{ request.session.seller_name }}</h2>
+            </div>
+            <ul class="nav nav-sidebar">
+                <li {% block nav_home %}{% endblock %}><a href="{% url 'checkstand:home' %}">收银</a></li>
+                <li {% block nav_history %}{% endblock %}><a href="{% url 'checkstand:page' 1 %}">历史订单</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li {% block nav_desk %}{% endblock %}><a href="{% url 'checkstand:manage_desk' %}">桌号管理</a></li>
+                <li {% block nav_kind %}{% endblock %}><a href="{% url 'checkstand:manage_kind' %}">菜类管理</a></li>
+                <li {% block nav_menu %}{% endblock %}><a href="{% url 'checkstand:manage_menu' %}">菜单管理</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li {% block nav_day %}{% endblock %}><a href="{% url 'checkstand:income_day' %}">日收入</a></li>
+                <li {% block nav_month %}{% endblock %}><a href="{% url 'checkstand:income_month' %}">月收入</a></li>
+                <li {% block nav_year %}{% endblock %}><a href="{% url 'checkstand:income_year' %}">年收入</a></li>
+            </ul>
+            <ul class="nav nav-sidebar">
+                <li {% block nav_menus %}{% endblock %}><a href="{% url 'checkstand:analyze_menu' %}">菜单分析</a></li>
+            </ul>
+        </div>
+
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            {% if request.session.is_login %}
+                {% block html_content %}{% endblock %}
+            {% else %}
+                <h1>请先登陆</h1>
+            {% endif %}
+
+        </div>
+
+        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content" style="text-align: center">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">确认注销</h4>
+                    </div>
+                    <div class="modal-body">
+                        你是否要注销？
+                    </div>
+                    <div class="modal-footer">
+                        <div class="button-group">
+                            <a href="{% url 'checkstand:logout' %}" class="button button-small button-caution">注销</a>
+                            <button type="button"
+                                    class="button button-small"
+                                    data-dismiss="modal">
+                                关闭
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

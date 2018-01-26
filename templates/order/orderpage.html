@@ -1,0 +1,239 @@
+{% load staticfiles %}
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <title>点餐台</title>
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <link rel="icon" type="image/png" href="{% static 'assets/i/favicon.png' %}">
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    {#    <link rel="icon" sizes="192x192" href="{% static 'assets/i/app-icon72x72@2x.png' %}">#}
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    {#    <link rel="apple-touch-icon-precomposed" href="{% static 'assets/i/app-icon72x72@2x.png' %}">#}
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    {#    <meta name="msapplication-TileImage" content="{% static 'assets/i/app-icon72x72@2x.png' %}">#}
+    <meta name="msapplication-TileColor" content="#0e90d2">
+
+    <link rel="stylesheet" href="{% static 'assets/css/amazeui.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/app.css' %}">
+</head>
+<body>
+<header data-am-widget="header"
+        class="am-header am-header-default">
+    <div class="am-header-left am-header-nav">
+        <a href="#left-link" class="">
+
+            <i class="am-header-icon am-icon-home"></i>
+        </a>
+    </div>
+
+    <h1 class="am-header-title">
+        <a href="#title-link" class="">
+            {{ desk_id }}号桌点餐
+        </a>
+    </h1>
+
+    <div class="am-header-right am-header-nav">
+        <a href="#right-link" class="">
+
+            <i class="am-header-icon am-icon-bars"></i>
+        </a>
+    </div>
+</header>
+<div data-am-widget="tabs" id="doc-my-tabs" class="am-tabs am-tabs-d2">
+    <ul class="am-tabs-nav am-cf">
+        {% for kind in kinds %}
+            <li><a href="[data-tab-panel-{{ kind.id }}]">{{ kind.name }}</a></li>
+
+        {% endfor %}
+        <li><a href="[data-tab-panel-ordering]">提交</a></li>
+
+    </ul>
+    <div class="am-tabs-bd">
+
+        {% for kind in kinds %}
+            <div data-tab-panel-ordering class="am-tab-panel ">
+                {% for menu in menus %}
+                    {% ifequal kind.id menu.kind_id %}
+                        <div data-am-widget="list_news" class="am-list-news am-list-news-default">
+                            <div class="am-list-news-bd">
+                                <ul class="am-list">
+                                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-top">
+
+                                        <div class="am-list-thumb am-u-sm-6">
+                                            <a href="#">
+                                                <img src="/media/{{ menu.img }}"
+                                                     height="130px" alt=""/>
+                                            </a>
+                                        </div>
+
+                                        <div class=" am-list-main">
+                                            <h3 class="am-list-item-hd am-text-center am-text-primary">
+                                                {{ menu.name }}
+                                            </h3>
+
+                                            <div class="am-list-item-text am-text-center" style="margin-top: 20px">
+                                                价格：{{ menu.price }}元
+                                            </div>
+                                            <div class="am-text-center" style="margin-top: 20px">
+                                                <input id="min{{ menu.id }}" class="am-btn am-btn-primary am-btn-sm"
+                                                       type="button"
+                                                       value="-" disabled="disabled">
+                                                <input id="menu{{ menu.id }}_num" type="text" value="0"
+                                                       style="width:30px;">
+                                                <input id="add{{ menu.id }}" class="am-btn am-btn-primary am-btn-sm"
+                                                       type="button"
+                                                       value="+"
+                                                >
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    {% endifequal %}
+                {% endfor %}
+            </div>
+        {% endfor %}
+        <div id="readyToUp" data-tab-panel-ordering class="am-tab-panel ">
+            <div data-am-widget="list_news" class="am-list-news am-list-news-default ">
+                <table class="am-table ">
+                    <thead>
+                    <tr>
+                        <th>菜名</th>
+                        <th>价格</th>
+                        <th>份数</th>
+                    </tr>
+                    </thead>
+                    <tbody id="table_ordering">
+
+                    </tbody>
+                </table>
+
+                <div class="am-form am-form-horizontal">
+                    <fieldset>
+                        <div class="am-form-group">
+                            <label for="total_price" class="am-u-sm-3 am-form-label">总价：</label>
+                            <div class="am-u-sm-9">
+                                <input type="text" readonly="readonly" id="total_price">
+                            </div>
+                        </div>
+                        <div class="am-form-group">
+                            <label class="am-u-sm-3 am-form-label" for="remark">备注：</label>
+                            <div class="am-u-sm-9">
+                                <textarea class="am-u-sm-9" rows="5" type="text" id="remark"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="am-form-group">
+                            <div class="am-u-sm-6">
+                                <button id="rest_order" class="am-btn am-btn-primary am-btn-block">清空</button>
+                            </div>
+                            <div class="am-u-sm-6">
+                                <button id="place_order" class="am-btn am-btn-primary am-btn-block">提交</button>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<script src="{% static 'bootstrapt/js/jquery-1.12.0.min.js' %}"></script>
+<script src="{% static 'assets/js/amazeui.min.js' %}"></script>
+<script>
+
+    {% for menu in menus %}
+        $("#add{{ menu.id }}").click(function () {
+            num = parseInt($('#menu{{ menu.id }}_num').val()) + 1
+            if (num > 0) {
+                $('#min{{ menu.id }}').attr('disabled', false)
+            }
+            $('#menu{{ menu.id }}_num').val(num)
+        });
+        $("#min{{ menu.id }}").click(function () {
+            num = parseInt($('#menu{{ menu.id }}_num').val()) - 1
+            if (num <= 0) {
+                $('#min{{ menu.id }}').attr('disabled', true)
+            }
+            $('#menu{{ menu.id }}_num').val(num)
+        });
+    {% endfor %}
+
+    $('#doc-my-tabs').find('a').on('opened.tabs.amui', function (e) {
+        var html = ''
+        var totalPrice = 0
+        {% for menu in menus %}
+            num = parseInt($('#menu{{ menu.id }}_num').val())
+            totalPrice += parseInt({{ menu.price }}) * num
+            if (num != 0) {
+                html += "<tr>" +
+                    "<td>{{ menu.name }}</td>" +
+                    "<td>{{ menu.price }}</td>" +
+                    "<td>" + $('#menu{{ menu.id }}_num').val() + "</td>" +
+                    "</tr>"
+            }
+        {% endfor %}
+        $('#total_price').val(totalPrice)
+        $('#table_ordering').html(html)
+    })
+
+    $('#place_order').click(function () {
+        var formDate = new FormData()
+        var orderMenu = {}
+        var remark = ''
+        {% for menu in menus %}
+            num = parseInt($('#menu{{ menu.id }}_num').val())
+            if (num != 0) {
+                orderMenu['{{ menu.id }}'] = num;
+            }
+        {% endfor %}
+        orderMenu = JSON.stringify(orderMenu)
+        remark = $('#remark').val()
+        $.ajax({
+            headers: {"X-CSRFToken": '{{ csrf_token }}'},
+            url: "{% url 'order:place_order' %}",
+            type: 'POST',
+            tradition: true,
+            dataType: 'json',
+            data: {'desk_id': '{{ desk_id }}', 'order_menu': orderMenu, 'remark': remark},
+            success: function (data) {
+                if (data.state == 'success') {
+                    alert('下单成功')
+                }else if(data.state=='ordered'){
+                    alert('已经点餐，请不要重复提交')
+                }
+            },
+
+        })
+    })
+
+    $('#rest_order').click(function () {
+
+    })
+</script>
+</body>
+</html>

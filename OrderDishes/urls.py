@@ -17,8 +17,10 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
+from checkstand.views import login
 
 urlpatterns = [
+                  url(r'^$', login.login),
                   url(r'^admin/', admin.site.urls),
                   url(r'^checkstand/', include('checkstand.urls', namespace='checkstand')),
                   url(r'^order/', include('order.urls', namespace='order')),

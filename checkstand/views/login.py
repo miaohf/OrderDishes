@@ -33,7 +33,7 @@ def login(request):
     if request.session.get('is_login', False):
         return redirect('/checkstand/home/')
 
-    return render(request, 'checkstand/login.html', locals())
+    return render(request, 'checkstand/login.html')
 
     # request.META.get('HTTP_REFERER', '/')
 

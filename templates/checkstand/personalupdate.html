@@ -9,12 +9,12 @@
 
     <div class="row">
         <legend><h2>修改信息</h2></legend>
-        <form id="updateinfo" class="form-horizontal col-md-6" enctype="multipart/form-data">
+        <form id="updateinfo" class="form-horizontal col-md-12" enctype="multipart/form-data">
 
             <div class="form-group">
                 <label for="head" class="col-sm-3 control-label">用户头像：</label>
-                <div class="col-md-1"></div>
-                <div class="col-sm-3">
+                <div class="col-md-2"></div>
+                <div class="col-sm-2">
                     <img id="seller_head_img" src="/media/{{ seller.head }}" id="head" class="img-responsive">
                 </div>
             </div>
@@ -64,11 +64,11 @@
 
             <br>
             <div class="form-group">
-                <div class="col-md-3"></div>
-                <div class="col-md-4">
+                <div class="col-md-4"></div>
+                <div class="col-md-3">
                     <input id="rest_button" type="reset" class="button button-primary " value="还原">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <input type="button" data-toggle="modal" data-target="#update_info_modal"
                            class="button button-primary"
                            value="修改">

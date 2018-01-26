@@ -6,39 +6,43 @@
 {% block html_content %}
     <div class="row">
         <legend><h2>修改密码</h2></legend>
-        <p style="color:#5f9cc5;margin-left: 40px">请输入你的旧密码，为了安全起见，接着要输入两遍新密码，以便我们校验你输入的是否正确。</p>
-        <form id="updateinfo" class="form-horizontal col-md-6" enctype="multipart/form-data">
+        <div class="col-md-1"></div>
+        <form id="updateinfo" class="form-horizontal col-md-10" enctype="multipart/form-data">
+
+            <div class="row">
+                <div class="col-md-2"></div>
+                <p style="color:#5f9cc5;margin-left: 40px">请输入你的旧密码，为了安全起见，接着要输入两遍新密码，以便我们校验你输入的是否正确。</p>
             <hr>
+            </div>
+
             <div class="form-group">
-                <label for="old_passwd" class="col-sm-2 control-label">旧　密码：</label>
-                <div class="col-md-5">
+                <label for="old_passwd" class="col-sm-3 control-label">旧　密码：</label>
+                <div class="col-md-6">
                     <input id="old_passwd" type="password" class="form-control">
                 </div>
             </div>
             <hr>
             <div class="form-group">
-                <label for="new_passwd" class="col-sm-2 control-label">新　密码：</label>
-                <div class="col-sm-5">
+                <label for="new_passwd" class="col-sm-3 control-label">新　密码：</label>
+                <div class="col-sm-6">
                     <input id="new_passwd" type="password" class="form-control">
                     <p style="color:#5f9cc5"><br>你的密码不能与其他个人信息太相似。<br>
                         你的密码必须包含至少 8 个字符。<br>
                         你的密码不能是大家都爱用的常见密码。<br>
                         你的密码不能全部为数字。</p>
                 </div>
-
-
             </div>
             <hr>
             <div class="form-group">
-                <label for="re_passwd" class="col-sm-2 control-label">再次确认：</label>
-                <div class="col-sm-5">
+                <label for="re_passwd" class="col-sm-3 control-label">再次确认：</label>
+                <div class="col-sm-6">
                     <input id="re_passwd" type="password" class="form-control">
                 </div>
             </div>
             <hr>
             <br>
             <div class="form-group">
-                <div class="col-md-2"></div>
+                <div class="col-md-4"></div>
                 <div class="col-md-3">
                     <input data-toggle="modal"
                            class="button button-primary"
@@ -46,6 +50,7 @@
                            value="修改">
                 </div>
             </div>
+
         </form>
     </div>
 {% endblock %}
